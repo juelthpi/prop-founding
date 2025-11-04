@@ -1,0 +1,13 @@
+.control-risk-card-icon img {
+  max-width: 48px;
+}
+.circle-sm {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: var(--dark-primary);
+}
+.control-risk-card-label {
+  font-size: 12px;
+  color: var(--dark-primary);
+}
