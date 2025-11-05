@@ -37,7 +37,7 @@
   filter: blur(20px);
   right: -84px;
   top: -64px;
-  opacity: 0.8;
+  opacity: 0.6;
   z-index: -1;
 }
 .features-card-glow:hover::after {
@@ -47,7 +47,7 @@
 .features-card:hover .features-card-icon img {
   transform: translateY(-10px);
 }
-.row > .col-lg-4:nth-child(2) .features-card-glow:after {
+.row > div:nth-child(2) .features-card-glow:after {
   background: var(--gradient-primary);
 }
 .features-card-thumbnail img {
