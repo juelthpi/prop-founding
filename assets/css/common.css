@@ -14,7 +14,6 @@
   --white-light: rgba(255, 255, 255, 0.8);
   --white-dark: rgba(255, 255, 255, 0.1);
   --dark-primary: #22c55e;
-
   --secondary-color: #6c757d;
   --dark-green-color: #22c55e33;
   --dark-blue: #0c1122;
@@ -24,6 +23,9 @@
   --gray-medium: #a3a3a3;
   --gray-thin: #0d1422;
   --gary-regular: #27272a80;
+  --yellow-dark: #ffd900;
+  --purple: #9900ff;
+  --red: #c53022;
 }
 .text-primary {
   color: var(--dark-primary) !important;
@@ -52,6 +54,9 @@
 }
 .text-secondary {
   color: var(--secondary-color);
+}
+html {
+  overflow-x: hidden !important;
 }
 body {
   margin: 0;
@@ -418,6 +423,11 @@ h6 {
     line-height: 58px;
   }
 }
+@media (min-width: 992px) {
+  .h-lg-100 {
+    height: 100%;
+  }
+}
 @media all and (max-width: 991px) {
   h1 {
     font-size: 36px;
@@ -488,6 +498,10 @@ h6 {
   }
   .md-p {
     font-size: 14px;
+  }
+  .glow-circle {
+    max-width: 346px;
+    max-height: 462px;
   }
 }
 @media all and (max-width: 557px) {

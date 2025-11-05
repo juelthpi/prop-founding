@@ -1,0 +1,167 @@
+.chart-button {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  text-transform: uppercase;
+  background-color: var(--white-dark);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.border-gradient {
+  background-color: #121c2b;
+  position: relative;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  border-radius: 6px;
+  color: #fff;
+  transition: 0.5s;
+}
+.border-gradient:after {
+  content: "";
+  position: absolute;
+  top: -1.5px;
+  bottom: -1.5px;
+  left: -1.5px;
+  right: -1.5px;
+  z-index: -1;
+  border-radius: 6px;
+  background: linear-gradient(
+      226.65deg,
+      rgba(34, 197, 94, 0.8) -46.27%,
+      rgba(34, 197, 94, 0) 66.77%
+    ),
+    linear-gradient(
+      74.54deg,
+      rgba(255, 255, 255, 0.2) -3.26%,
+      rgba(255, 255, 255, 0) 41.45%
+    );
+}
+.chart-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* slider css */
+
+.swiper {
+  width: 80%;
+  max-width: 800px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.swiper-slide img {
+  /* width: 90px; */
+  transition: transform 0.4s, filter 0.4s;
+  opacity: 0.6;
+  width: 100%;
+}
+
+/* Center logo big + glow */
+.swiper-slide-active img {
+  transform: scale(1.1);
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(100, 0, 255, 0.6));
+  position: relative;
+  z-index: 3;
+}
+
+/* Add 3 glowing borders behind active image */
+.swiper-slide-active::before,
+.swiper-slide-active::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.swiper-slide-active::before {
+  width: 160px;
+  height: 160px;
+  border: 1px solid rgb(72 45 160);
+  box-shadow: 0 0 26px rgba(160, 90, 255, 0.5);
+}
+
+.swiper-slide-active::after {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(160, 90, 255, 0.2);
+  box-shadow: 0 0 20px rgba(160, 90, 255, 0.2);
+}
+
+.swiper-slide-active img::after {
+  width: 240px;
+  height: 240px;
+}
+
+/* Smaller images on side */
+.swiper-slide-next img,
+.swiper-slide-prev img {
+  transform: scale(0.9);
+  opacity: 0.8;
+  filter: drop-shadow(0 0 10px #6532fe99);
+}
+.swiper-slide-prev img {
+  margin-right: 55px;
+}
+.swiper-slide-next img {
+  margin-left: 55px;
+}
+/* Far side images smaller */
+.swiper-slide
+  img:not(.swiper-slide-active img):not(.swiper-slide-next img):not(
+    .swiper-slide-prev img
+  ) {
+  transform: scale(0.4);
+  opacity: 0.5;
+  filter: drop-shadow(0 0 10px rgba(100, 0, 255, 0.6));
+}
+.swiper {
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
+}
+@media all and (max-width: 991px) {
+  .swiper {
+    /* overflow: inherit; */
+    height: 300px;
+  }
+  .swiper-slide-active::after {
+    width: 175px;
+    height: 175px;
+  }
+  .swiper-slide-active::before {
+    width: 135px;
+    height: 135px;
+  }
+  .slider-area-height {
+    padding-top: 60px;
+  }
+}
+@media all and (max-width: 567px) {
+  .swiper-slide-active::before {
+    width: 110px;
+    height: 110px;
+  }
+  .swiper-slide-active::after {
+    width: 140px;
+    height: 140px;
+  }
+  .swiper-slide-prev img {
+    margin-right: 20px;
+  }
+  .swiper-slide-next img {
+    margin-left: 20px;
+  }
+}
