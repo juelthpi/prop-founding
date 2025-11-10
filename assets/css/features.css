@@ -6,7 +6,7 @@
 .features-card {
   padding: 32px;
   border-radius: 20px;
-  background: var(--dark-blue);
+  background: var(--white-5);
   backdrop-filter: blur(20px);
   cursor: pointer;
 }
@@ -19,7 +19,7 @@
   height: 120%;
   width: 120%;
   border-radius: 50%;
-  background-color: var(--yellow-dark);
+  background-color: var(--yellow-100);
   filter: blur(40px);
   top: -194px;
   left: 41%;
@@ -33,7 +33,7 @@
   height: 155px;
   width: 188px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: var(--black-100);
   filter: blur(20px);
   right: -84px;
   top: -64px;
@@ -48,7 +48,11 @@
   transform: translateY(-10px);
 }
 .row > div:nth-child(2) .features-card-glow:after {
-  background: var(--gradient-primary);
+  background: linear-gradient(
+    117.1deg,
+    var(--brand-100) 35.08%,
+    var(--brand-secondary-100) 105.57%
+  );
 }
 .features-card-thumbnail img {
   transition: 0.5s;

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Multi Color System</title>
+    <style>
+      :root {
+        /* ৫টা main color variable */
+        --brand: #ed1818;
+        --white: #ffffff;
+        --black: #020617;
+        --blue: #0084ff;
+        --warning: #f94f40;
+        --yellow: #ffd900;
+        --neon: #95ff00;
+        --orange: #ff4c00;
+        --indigo: #537ad6;
+        --purple: #9900ff;
+      }
+      /* border: 10px solid var(--ripon-60);
+         background-color: var(--juel-10);
+         bg-indigo-100
+    */
+    </style>
+  </head>
+  <body>
+    <script>
+      /*------------------------------------------
+            1. HEX → RGB convert helper
+         -------------------------------------------*/
+      function hexToRgb(hex) {
+        hex = hex.replace("#", "");
+        if (hex.length === 3)
+          hex = hex
+            .split("")
+            .map((x) => x + x)
+            .join("");
+        const num = parseInt(hex, 16);
+        return {
+          r: (num >> 16) & 255,
+          g: (num >> 8) & 255,
+          b: num & 255,
+        };
+      }
+
+      /*------------------------------------------
+            2. Generate opacity variants & CSS classes
+         -------------------------------------------*/
+      const mainColors = [
+        "brand",
+        "white",
+        "black",
+        "blue",
+        "warning",
+        "yellow",
+        "neon",
+        "orange",
+        "indigo",
+        "purple",
+      ];
+      const root = document.documentElement;
+      const styleTag = document.createElement("style");
+      document.head.appendChild(styleTag);
+
+      let cssRules = "";
+
+      mainColors.forEach((name) => {
+        const baseHex = getComputedStyle(root)
+          .getPropertyValue(`--${name}`)
+          .trim();
+        const rgb = hexToRgb(baseHex);
+
+        // generate opacity variants: 10%, 20%, ... 100%
+        for (let i = 1; i <= 10; i++) {
+          const opacity = i / 10; // 0.1 → 1.0
+          const varName = `--${name}-${i * 10}`;
+          const rgba = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${opacity})`;
+
+          // set CSS variable
+          root.style.setProperty(varName, rgba);
+
+          // generate CSS classes (bg-*, text-*)
+          cssRules += `
+               .bg-${name}-${
+            i * 10
+          } { background-color: var(${varName}) !important; }
+               .text-${name}-${i * 10} { color: var(${varName}) !important; }
+               .border-${name}-${
+            i * 10
+          } { border-color: var(${varName}) !important; }
+             `;
+        }
+      });
+
+      styleTag.innerHTML = cssRules;
+    </script>
+  </body>
+</html>

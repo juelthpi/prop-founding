@@ -37,55 +37,69 @@
     <link rel="stylesheet" href="assets/css/profit-sharing.css" />
     <!-- features css -->
     <link rel="stylesheet" href="assets/css/features.css" />
+    <!-- slider css -->
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <!-- investor review css -->
+    <link rel="stylesheet" href="assets/css/investors-review.css" />
     <!-- chart css -->
     <link rel="stylesheet" href="assets/css/chart.css" />
   </head>
-  <body class="header-after-shape">
+  <!-- header-after-shape -->
+  <body class="overflow-hidden">
+    <!-- Header shape -->
+    <div class="header-shape-container position-relative">
+      <span class="header-shape"></span>
+      <div class="header-shape-2-container">
+        <div class="header-shape-2"></div>
+      </div>
+      <div class="line-shape"></div>
+    </div>
     <!-- Start Header -->
-    <nav class="navbar navbar-expand-xl" id="mainNavbar" data-scroll="300">
-      <div class="container header-container ps-4">
-        <!-- Left: Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="assets/images/logo.png" alt="Logo" />
-        </a>
+    <header class="header-area">
+      <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container header-container ps-4 bg-filter-20">
+          <!-- Left: Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/images/logo.png" alt="Logo" />
+          </a>
 
-        <!-- Mobile toggle button -->
-        <button
-          class="navbar-toggler p-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <!-- Mobile toggle button -->
+          <button
+            class="navbar-toggler p-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!-- Desktop menu (center) -->
-        <div
-          class="collapse navbar-collapse justify-content-center d-none d-xl-flex"
-        >
-          <ul class="navbar-nav mb-2 mb-xl-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Live Trades</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          </ul>
+          <!-- Desktop menu (center) -->
+          <div
+            class="collapse navbar-collapse justify-content-center d-none d-xl-flex"
+          >
+            <ul class="navbar-nav mb-2 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Trades</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            </ul>
+          </div>
+
+          <!-- Right: Button -->
+          <div class="d-none d-xl-block">
+            <a href="#" class="primary-btn w-100">Log In</a>
+          </div>
         </div>
-
-        <!-- Right: Button -->
-        <div class="d-none d-xl-block">
-          <a href="#" class="primary-btn w-100">Log In</a>
-        </div>
-
         <!-- Offcanvas (for mobile only) -->
         <div
           class="offcanvas offcanvas-end d-xl-none"
@@ -93,7 +107,7 @@
           id="offcanvasNavbar"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-white">Menu</h5>
+            <h4 class="offcanvas-title text-white-100">Menu</h4>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -118,8 +132,9 @@
             <a href="#" class="primary-btn mt-3 w-100">Log In</a>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
     <!-- End Header -->
     <!-- Start Hero -->
     <section class="hero-section section-lg-mt">
@@ -127,10 +142,10 @@
         <div class="row">
           <div class="col-md-10 offset-md-1 col-xxl-8 offset-xxl-2">
             <div class="text-center">
-              <h1 class="text-uppercase text-white">
+              <h1 class="text-uppercase text-white-100">
                 Invest with Confidence. Trade with Proof.
               </h1>
-              <p class="md-p text-justify text-white-80 mt-3">
+              <p class="md-p text-justify mt-3 text-white-80">
                 Join a prop funding platform built on transparency. You deposit,
                 we trade. Profits are shared automatically. Your risk stays in
                 your control.
@@ -145,15 +160,21 @@
             <div
               class="d-flex flex-wrap align-items-center gap-3 justify-content-center mt-5"
             >
-              <div class="d-flex align-items-center gap-2 outline-btn-md">
+              <div
+                class="d-flex align-items-center gap-2 outline-btn-md text-white-100 border-1 bg-white-5"
+              >
                 <img src="assets/images/icon/verified.svg" alt="verified" />
                 <span>KYC verified</span>
               </div>
-              <div class="d-flex align-items-center gap-2 outline-btn-md">
+              <div
+                class="d-flex align-items-center gap-2 outline-btn-md text-white-100 border-1 bg-white-5"
+              >
                 <img src="assets/images/icon/secure.svg" alt="secure" />
                 <span>Secure Payments</span>
               </div>
-              <div class="d-flex align-items-center gap-2 outline-btn-md">
+              <div
+                class="d-flex align-items-center gap-2 outline-btn-md text-white-100 border-1 bg-white-5"
+              >
                 <img src="assets/images/icon/screenshot.svg" alt="screenshot" />
                 <span>Live Trade Screenshots</span>
               </div>
@@ -176,7 +197,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <h3 class="text-heading text-center">How It Works in Four Steps</h3>
+            <h3 class="text-center text-white-100">
+              How It Works in Four Steps
+            </h3>
           </div>
         </div>
         <div class="row gy-4 mt-4 justify-content-center">
@@ -185,13 +208,13 @@
               class="work-step-card text-center d-flex flex-column align-items-center"
             >
               <div
-                class="work-step-icon d-flex justify-content-center align-items-center"
+                class="work-step-icon d-flex justify-content-center align-items-center bg-brand-20"
               >
                 <img src="assets/images/icon/deposit.svg" alt="deposit" />
               </div>
-              <div class="work-step-content text-gray-light">
-                <h6 class="mt-3">Deposit</h6>
-                <p class="mt-2 sm-p">
+              <div class="work-step-content">
+                <h6 class="mt-3 text-white-100">Deposit</h6>
+                <p class="mt-2 sm-p text-white-80">
                   Fund your account securely with your preferred payment method
                 </p>
               </div>
@@ -202,13 +225,13 @@
               class="work-step-card text-center d-flex flex-column align-items-center"
             >
               <div
-                class="work-step-icon d-flex justify-content-center align-items-center"
+                class="work-step-icon d-flex justify-content-center align-items-center bg-brand-20"
               >
                 <img src="assets/images/icon/live.svg" alt="live" />
               </div>
-              <div class="work-step-content text-gray-light">
-                <h6 class="mt-3">Trades Live</h6>
-                <p class="mt-2 sm-p">
+              <div class="work-step-content">
+                <h6 class="mt-3 text-white-100">Trades Live</h6>
+                <p class="mt-2 sm-p text-white-80">
                   Our expert traders execute strategies in real-time
                 </p>
               </div>
@@ -219,16 +242,16 @@
               class="work-step-card text-center d-flex flex-column align-items-center"
             >
               <div
-                class="work-step-icon d-flex justify-content-center align-items-center"
+                class="work-step-icon d-flex justify-content-center align-items-center bg-brand-20"
               >
                 <img
                   src="assets/images/icon/profits-shared.svg"
                   alt="profits"
                 />
               </div>
-              <div class="work-step-content text-gray-light">
-                <h6 class="mt-3">Profits Shared</h6>
-                <p class="mt-2 sm-p">
+              <div class="work-step-content">
+                <h6 class="mt-3 text-white-100">Profits Shared</h6>
+                <p class="mt-2 sm-p text-white-80">
                   Earnings are distributed automatically based on your share
                 </p>
               </div>
@@ -239,13 +262,13 @@
               class="work-step-card text-center d-flex flex-column align-items-center"
             >
               <div
-                class="work-step-icon d-flex justify-content-center align-items-center"
+                class="work-step-icon d-flex justify-content-center align-items-center bg-brand-20"
               >
                 <img src="assets/images/icon/withdraw.svg" alt="withdraw" />
               </div>
-              <div class="work-step-content text-gray-light">
-                <h6 class="mt-3">Withdraw</h6>
-                <p class="mt-2 sm-p">
+              <div class="work-step-content">
+                <h6 class="mt-3 text-white-100">Withdraw</h6>
+                <p class="mt-2 sm-p text-white-80">
                   Access your profits anytime with fast, secure withdrawals
                 </p>
               </div>
@@ -264,8 +287,8 @@
           <div
             class="col-xl-6 offset-md-1 col-md-10 offset-xl-0 text-center text-xl-start"
           >
-            <h3 class="text-heading">Live Transparency Widget</h3>
-            <p class="text-heading mt-3">
+            <h3 class="text-white-100">Live Transparency Widget</h3>
+            <p class="mt-3 text-white-80">
               Unlike other platforms, we don’t hide behind numbers or delayed
               reports. Our Live Transparency Feed gives you verified trade
               screenshots, ticker updates, and performance metrics as they
@@ -291,7 +314,7 @@
                           class="text-center d-flex flex-column align-items-center"
                         >
                           <div
-                            class="glass-effect-card-icon d-flex justify-content-center align-items-center"
+                            class="glass-effect-card-icon d-flex justify-content-center align-items-center bg-brand-100"
                           >
                             <img
                               src="assets/images/icon/lock.svg"
@@ -299,11 +322,9 @@
                               class="w-100"
                             />
                           </div>
-                          <div
-                            class="glass-effect-card-content text-gray-light"
-                          >
-                            <h6 class="mt-3">Trades Live</h6>
-                            <p class="mt-2 sm-p">
+                          <div class="glass-effect-card-content">
+                            <h6 class="mt-3 text-white-100">Trades Live</h6>
+                            <p class="mt-2 sm-p text-white-80">
                               Our expert traders execute strategies in real-time
                             </p>
                             <div class="d-inline-block mt-3">
@@ -337,21 +358,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <h3 class="text-heading text-center">
+            <h3 class="text-center text-white-100">
               You Control Your Risk — Always
             </h3>
-            <p class="text-heading mt-3 text-center">
+            <p class="mt-3 text-center text-white-80">
               Our platform gives you complete control over your risk parameters
             </p>
           </div>
         </div>
         <div class="row mt-5 gy-4 justify-content-center">
           <div class="col-lg-8">
-            <div class="border-1 p-3 rounded-4 h-100">
-              <div class="row h-100">
+            <div class="border-1 p-2 rounded-4 h-100">
+              <div class="row h-100 gy-md-0 gy-4">
                 <div class="col-md-6">
                   <div
-                    class="control-risk-card rounded-4 p-4 bg-gray-thin h-100"
+                    class="control-risk-card rounded-4 p-4 h-100 bg-white-5 gradient-border bg-filter-20"
                   >
                     <div class="control-risk-card-icon">
                       <img
@@ -361,8 +382,8 @@
                       />
                     </div>
                     <div class="mt-3">
-                      <h5 class="text-white">Participation Toggle</h5>
-                      <p class="sm-p text-gray-medium mt-3">
+                      <h5 class="text-white-100">Participation Toggle</h5>
+                      <p class="sm-p mt-3 text-white-80">
                         Pause or resume trading activity at any time. Maintain
                         full control over your trading operations, with instant
                         on/off functionality.
@@ -372,7 +393,7 @@
                 </div>
                 <div class="col-md-6">
                   <div
-                    class="control-risk-card rounded-4 p-4 bg-gray-thin h-100"
+                    class="control-risk-card rounded-4 p-4 h-100 bg-white-5 gradient-border bg-filter-20"
                   >
                     <div
                       class="control-risk-card-icon d-flex align-items-center gap-3"
@@ -384,7 +405,9 @@
                       />
                       <div class="d-flex align-items-center gap-2">
                         <span class="circle-sm"></span>
-                        <span class="control-risk-card-label">Active</span>
+                        <span class="control-risk-card-label text-brand-100"
+                          >Active</span
+                        >
                       </div>
                     </div>
                     <div class="mt-3">
@@ -401,7 +424,7 @@
           </div>
           <div class="col-lg-4 col-md-6">
             <div
-              class="control-risk-card rounded-4 p-4 bg-gray-thin h-100 border-1"
+              class="control-risk-card rounded-4 p-4 h-100 bg-white-5 bg-filter-20 border-1"
             >
               <div class="control-risk-card-icon">
                 <img
@@ -411,23 +434,23 @@
                 />
               </div>
               <div class="mt-3">
-                <h5 class="text-white">Per-Trade Cap</h5>
-                <p class="sm-p text-gray-medium mt-3">
+                <h5 class="text-white-100">Per-Trade Cap</h5>
+                <p class="sm-p mt-3 text-white-80">
                   Control the maximum risk per individual trade. Set percentage
                   or fixed amount limits.
                 </p>
                 <div class="d-flex flex-column gap-2 mt-3">
                   <div
-                    class="d-flex align-items-center justify-content-between gap-2 rounded-3 bg-gray-regular py-2 px-3"
+                    class="d-flex align-items-center justify-content-between gap-2 rounded-3 py-2 px-3 bg-white-5"
                   >
-                    <p class="text-primary sm-p">Max Risk</p>
-                    <p class="text-white sm-p">2%</p>
+                    <p class="sm-p text-brand-100">Max Risk</p>
+                    <p class="sm-p text-white-100">2%</p>
                   </div>
                   <div
-                    class="d-flex align-items-center justify-content-between gap-2 rounded-3 bg-gray-regular py-2 px-3"
+                    class="d-flex align-items-center justify-content-between gap-2 rounded-3 py-2 px-3 bg-white-5"
                   >
-                    <p class="text-primary sm-p">Max Amount</p>
-                    <p class="text-white sm-p">$500</p>
+                    <p class="sm-p text-brand-100">Max Amount</p>
+                    <p class="sm-p text-white-100">$500</p>
                   </div>
                 </div>
               </div>
@@ -445,16 +468,16 @@
                           alt="warning"
                         />
                       </div>
-                      <h4 class="text-heading">Daily Loss Limit</h4>
+                      <h4 class="text-white-100">Daily Loss Limit</h4>
                     </div>
-                    <p class="text-white mt-3 text-start">
+                    <p class="mt-3 text-start text-white-100">
                       Set maximum daily loss thresholds to protect your capital
                     </p>
                   </div>
                   <div class="col-md-4">
                     <div class="text-start text-md-end">
-                      <h4 class="text-white">$5,000</h4>
-                      <p class="text-heading md-p">Daily Limit</p>
+                      <h4 class="text-white-100">$5,000</h4>
+                      <p class="md-p text-white-80">Daily Limit</p>
                     </div>
                   </div>
                 </div>
@@ -478,10 +501,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 offset-md-1">
-            <h3 class="text-heading text-center">
+            <h3 class="text-center text-white-100">
               Fair, Transparent Profit Sharing
             </h3>
-            <p class="text-heading mt-3 text-center">
+            <p class="mt-3 text-center text-white-80">
               Everyone wins when trades are successful
             </p>
           </div>
@@ -496,8 +519,8 @@
                 <div class="profit-sharing-card-effect"></div>
               </div>
               <div class="profit-sharing-content mt-5">
-                <h6 class="text-heading">Trader First-Cut</h6>
-                <p class="sm-p text-heading mt-3">
+                <h6 class="text-white-90">Trader First-Cut</h6>
+                <p class="sm-p mt-3 text-white-70">
                   Professional traders receive their performance fee first,
                   ensuring top talent stays motivated
                 </p>
@@ -513,8 +536,8 @@
                 <div class="profit-sharing-card-effect"></div>
               </div>
               <div class="profit-sharing-content mt-5">
-                <h6 class="text-heading">Pro-Rata Distribution</h6>
-                <p class="sm-p text-heading mt-3">
+                <h6 class="text-white-90">Pro-Rata Distribution</h6>
+                <p class="sm-p mt-3 text-white-70">
                   Remaining profits are distributed proportionally based on your
                   account size
                 </p>
@@ -530,8 +553,8 @@
                 <div class="profit-sharing-card-effect"></div>
               </div>
               <div class="profit-sharing-content mt-5">
-                <h6 class="text-heading">Optional Loss Share</h6>
-                <p class="sm-p text-heading mt-3">
+                <h6 class="text-white-90">Optional Loss Share</h6>
+                <p class="sm-p mt-3 text-white-70">
                   Traders can opt to share in losses, aligning incentives.
                 </p>
               </div>
@@ -554,10 +577,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2">
-            <h3 class="text-heading text-center">
+            <h3 class="text-center text-white-100">
               Powerful Features for Traders & Investors
             </h3>
-            <p class="text-heading mt-3 text-center">
+            <p class="mt-3 text-center text-white-80">
               Our platform combines cutting-edge technology with user-friendly
               interfaces to provide you with the best crypto trading experience.
             </p>
@@ -575,8 +598,8 @@
                 />
               </div>
               <div class="features-card-content mt-2">
-                <h6 class="text-white">Instant Transactions</h6>
-                <p class="text-gray-medium mt-2">
+                <h6 class="text-white-100">Instant Transactions</h6>
+                <p class="mt-2 text-white-80">
                   Experience lightning-fast transaction processing and
                   confirmations.
                 </p>
@@ -591,8 +614,8 @@
                 <img src="assets/images/icon/grade-security.png" alt="icon" />
               </div>
               <div class="features-card-content mt-2">
-                <h6 class="text-white">Enterprise-Grade Security</h6>
-                <p class="text-gray-medium mt-2">
+                <h6 class="text-white-100">Enterprise-Grade Security</h6>
+                <p class="mt-2 text-white-80">
                   Your assets are protected with multi-layer security protocols
                   and regular audits.
                 </p>
@@ -609,8 +632,8 @@
                 />
               </div>
               <div class="features-card-content mt-2">
-                <h6 class="text-white">Multi-Chain Support</h6>
-                <p class="text-white mt-2">
+                <h6 class="text-white-100">Multi-Chain Support</h6>
+                <p class="mt-2 text-white-80">
                   Trade assets across multiple blockchain networks from a single
                   interface.
                 </p>
@@ -631,8 +654,8 @@
                       />
                     </div>
                     <div class="features-card-content mt-2">
-                      <h6 class="text-white">Advanced Trading Tools</h6>
-                      <p class="text-gray-medium mt-2">
+                      <h6 class="text-white-100">Advanced Trading Tools</h6>
+                      <p class="mt-2 text-white-80">
                         Access professional-grade trading tools with real-time
                         analytics and customizable charts.
                       </p>
@@ -645,23 +668,21 @@
                       class="d-flex align-items-center gap-3 flex-wrap justify-content-between mb-2"
                     >
                       <div>
-                        <h6 class="text-white">Total Portfolio Value</h6>
+                        <h6 class="text-white-100">Total Portfolio Value</h6>
                         <h4
-                          class="d-flex align-items-center gap-2 mt-2 text-heading"
+                          class="d-flex align-items-center gap-2 mt-2 text-white-100"
                         >
                           $124,567.89
-                          <span class="text-primary sm-p">+5.67%</span>
+                          <span class="text-brand-100 sm-p">+5.67%</span>
                         </h4>
                       </div>
                       <div>
                         <ul class="d-flex align-items-center gap-2">
-                          <li class="chart-button text-white">1H</li>
-                          <li class="border-gradient chart-button text-white">
-                            24H
-                          </li>
-                          <li class="chart-button text-white">7D</li>
-                          <li class="chart-button text-white">1M</li>
-                          <li class="chart-button text-white">1Y</li>
+                          <li class="chart-button">1H</li>
+                          <li class="border-gradient chart-button">24H</li>
+                          <li class="chart-button">7D</li>
+                          <li class="chart-button">1M</li>
+                          <li class="chart-button">1Y</li>
                         </ul>
                       </div>
                     </div>
@@ -682,7 +703,8 @@
               <div class="col-lg-8">
                 <div class="features-card slider-area-height h-lg-100">
                   <!-- Swiper Container -->
-                  <div class="swiper">
+
+                  <div class="partnership-slider swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <img
@@ -742,8 +764,8 @@
                   </div>
 
                   <div class="features-card-content mt-2">
-                    <h6 class="text-white">Partnership Program</h6>
-                    <p class="text-gray-medium mt-2">
+                    <h6 class="text-white-100">Partnership Program</h6>
+                    <p class="mt-2 text-white-80">
                       Earn rewards by referring users or becoming an official
                       partner in our ecosystem.
                     </p>
@@ -760,8 +782,8 @@
                     />
                   </div>
                   <div class="features-card-content mt-2">
-                    <h6 class="text-white">Smart Investment Options</h6>
-                    <p class="text-white mt-2">
+                    <h6 class="text-white-100">Smart Investment Options</h6>
+                    <p class="mt-2 text-white-80">
                       Diversify your portfolio with AI-powered investment
                       recommendations and strategies.
                     </p>
@@ -774,13 +796,416 @@
       </div>
     </section>
     <!-- End features -->
+    <!-- Start investors review -->
+    <section class="investors-review-section section-lg-mt">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-xxl-5 col-md-9">
+            <h3 class="text-white-100 text-center text-md-start">
+              Trusted by Investors Worldwide
+            </h3>
+          </div>
+          <div class="col-xxl-7 col-md-3">
+            <div
+              class="slider-button d-flex align-items-center gap-3 justify-content-center justify-content-md-end"
+            >
+              <span class="swiper-slider-button" id="swiper-slider-button-next">
+                <svg
+                  width="10"
+                  height="18"
+                  viewBox="0 0 10 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.74993 0.75C8.74993 0.75 0.75 6.64187 0.75 8.75C0.75 10.8583 8.75 16.75 8.75 16.75"
+                    stroke="white"
+                    stroke-opacity="0.8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span
+                class="swiper-slider-button active"
+                id="swiper-slider-button-prev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="15"
+                  viewBox="0 0 23 15"
+                  fill="none"
+                >
+                  <path
+                    d="M0 7.19694H20.762M14.6668 13.8636L21.3333 7.19694L14.6667 0.530273"
+                    stroke="white"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="investors-review-slider swiper mt-5">
+              <div class="swiper-wrapper">
+                <!-- slider item -->
+                <div
+                  class="swiper-slide investor-review-card border-1 p-4 rounded-4 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="investor-review-card-icon">
+                    <img src="assets/images/icon/quotation.png" alt="icon" />
+                  </div>
+                  <div class="investor-review-body mt-4">
+                    <p class="text-white-80">
+                      "The transparency is unmatched. I can see every trade,
+                      every profit, and every loss. Finally, a platform I can
+                      trust with my money."
+                    </p>
+                  </div>
+                  <div class="mt-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="investor-review-author d-flex align-items-center gap-3"
+                      >
+                        <img src="assets/images/user/user-1.png" alt="user" />
+                        <div>
+                          <h6 class="text-white-80">Sarah Chen</h6>
+                          <p class="text-white-100 sm-p">Investor</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider item -->
+                <div
+                  class="swiper-slide investor-review-card border-1 p-4 rounded-4 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="investor-review-card-icon">
+                    <img src="assets/images/icon/quotation.png" alt="icon" />
+                  </div>
+                  <div class="investor-review-body mt-4">
+                    <p class="text-white-80">
+                      "Being able to control my risk parameters gives me peace
+                      of mind. I invest what I am comfortable with and the
+                      returns have been consistent."
+                    </p>
+                  </div>
+                  <div class="mt-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="investor-review-author d-flex align-items-center gap-3"
+                      >
+                        <img src="assets/images/user/user-2.png" alt="user" />
+                        <div>
+                          <h6 class="text-white-80">Sarah L.</h6>
+                          <p class="text-white-100 sm-p">Business Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider item -->
+                <div
+                  class="swiper-slide investor-review-card border-1 p-4 rounded-4 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="investor-review-card-icon">
+                    <img src="assets/images/icon/quotation.png" alt="icon" />
+                  </div>
+                  <div class="investor-review-body mt-4">
+                    <p class="text-white-80">
+                      "As a trader on this platform, the profit-sharing model is
+                      fair and motivating. It is a win-win for everyone
+                      involved."
+                    </p>
+                  </div>
+                  <div class="mt-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="investor-review-author d-flex align-items-center gap-3"
+                      >
+                        <img src="assets/images/user/user-3.png" alt="user" />
+                        <div>
+                          <h6 class="text-white-80">Sarah Chen</h6>
+                          <p class="text-white-100 sm-p">Professional Trader</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider item -->
+                <div
+                  class="swiper-slide investor-review-card border-1 p-4 rounded-4 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="investor-review-card-icon">
+                    <img src="assets/images/icon/quotation.png" alt="icon" />
+                  </div>
+                  <div class="investor-review-body mt-4">
+                    <p class="text-white-80">
+                      "The transparency is unmatched. I can see every trade,
+                      every profit, and every loss. Finally, a platform I can
+                      trust with my money."
+                    </p>
+                  </div>
+                  <div class="mt-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="investor-review-author d-flex align-items-center gap-3"
+                      >
+                        <img src="assets/images/user/user-1.png" alt="user" />
+                        <div>
+                          <h6 class="text-white-80">Sarah Chen</h6>
+                          <p class="text-white-100 sm-p">Investor</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider item -->
+                <div
+                  class="swiper-slide investor-review-card border-1 p-4 rounded-4 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="investor-review-card-icon">
+                    <img src="assets/images/icon/quotation.png" alt="icon" />
+                  </div>
+                  <div class="investor-review-body mt-4">
+                    <p class="text-white-80">
+                      "Being able to control my risk parameters gives me peace
+                      of mind. I invest what I am comfortable with and the
+                      returns have been consistent."
+                    </p>
+                  </div>
+                  <div class="mt-4">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        class="investor-review-author d-flex align-items-center gap-3"
+                      >
+                        <img src="assets/images/user/user-2.png" alt="user" />
+                        <div>
+                          <h6 class="text-white-80">Sarah L.</h6>
+                          <p class="text-white-100 sm-p">Business Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End investors review -->
+    <!-- Start trust & security -->
+    <section class="trust-security-section section-lg-pt position-relative">
+      <div
+        class="stars"
+        star="120"
+        speed="fast"
+        area="top-right"
+        width="45"
+        height="70"
+      ></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <h3 class="text-center text-white-100">Trust & Security</h3>
+            <p class="mt-3 text-center text-white-80">
+              Your safety and security are our top priorities
+            </p>
+          </div>
+        </div>
+        <div class="row gy-4 justify-content-center mt-5">
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="p-3 rounded-4 bg-white-5 bg-filter-20 h-100 border-1 card-hover-translate card-hover-zooming"
+            >
+              <div class="card-thumbnail card-hover-zooming-img">
+                <img
+                  src="assets/images/thumbnails/security-1.png"
+                  alt="icon"
+                  class="w-100 rounded-2"
+                />
+              </div>
+              <div class="card-content mt-3 text-center">
+                <h6 class="text-white-100">Secure Deposits</h6>
+                <p class="mt-2 text-white-80">
+                  Bank-grade encryption and secure payment processing protect
+                  your funds at all times
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="p-3 rounded-4 bg-white-5 bg-filter-20 h-100 border-1 card-hover-translate card-hover-zooming"
+            >
+              <div class="card-thumbnail card-hover-zooming-img">
+                <img
+                  src="assets/images/thumbnails/security-2.png"
+                  alt="icon"
+                  class="w-100 rounded-2"
+                />
+              </div>
+              <div class="card-content mt-3 text-center">
+                <h6 class="text-white-100">KYC/AML Compliance</h6>
+                <p class="mt-2 text-white-80">
+                  Full regulatory compliance with identity verification and
+                  anti-money laundering protocols
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="p-3 rounded-4 bg-white-5 bg-filter-20 h-100 border-1 card-hover-translate card-hover-zooming"
+            >
+              <div class="card-thumbnail card-hover-zooming-img">
+                <img
+                  src="assets/images/thumbnails/security-1.png"
+                  alt="icon"
+                  class="w-100 rounded-2"
+                />
+              </div>
+              <div class="card-content mt-3 text-center">
+                <h6 class="text-white-100">Immutable Records</h6>
+                <p class="mt-2 text-white-80">
+                  All transactions and trades are recorded on blockchain for
+                  complete transparency
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End trust & security -->
+    <!-- Start why choose -->
+    <section
+      class="why-choose-section section-lg-pt position-relative bg-filter-20"
+    >
+      <div
+        class="stars"
+        star="120"
+        speed="fast"
+        area="top-right"
+        width="45"
+        height="70"
+      ></div>
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-xxl-5 col-md-9">
+            <h3 class="text-white-100 text-center text-md-start">
+              Why Choose Us
+            </h3>
+            <p class="text-white-80 text-center text-md-start mt-2">
+              See how we compare to traditional prop firms
+            </p>
+          </div>
+          <div class="col-xxl-7 col-md-3">
+            <div
+              class="slider-button d-flex align-items-center gap-3 justify-content-center justify-content-md-end"
+            >
+              <a href="#" class="secondary-btn">See How It Works</a>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-4 mt-5">
+          <div class="col-lg-4">
+            <div
+              class="p-3 rounded-4 bg-white-5 bg-filter-20 h-100 border-1 card-hover-translate card-hover-zooming"
+            >
+              <div class="card-thumbnail card-hover-zooming-img">
+                <img
+                  src="assets/images/thumbnails/transparency.png"
+                  alt="icon"
+                  class="w-100 rounded-2"
+                />
+              </div>
+              <div class="card-content mt-3">
+                <h6 class="text-white-100">Full Transparency</h6>
+                <p class="mt-2 text-white-80">
+                  Complete visibility into all transactions and fees. No hidden
+                  costs, no surprises - just clear, honest information at every
+                  step.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <div
+                  class="py-4 px-3 rounded-4 bg-white-5 bg-filter-20 h-100 border-1 d-flex align-items-center gap-3 card-hover-translate card-hover-zooming"
+                >
+                  <div class="row gy-4 align-items-center">
+                    <div class="col-md-4">
+                      <div class="card-thumbnail card-hover-zooming-img">
+                        <img
+                          src="assets/images/thumbnails/user-controls.png"
+                          alt="icon"
+                          class="w-100 rounded-2"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-content">
+                        <h6 class="text-white-100">Total Control</h6>
+                        <p class="mt-2 text-white-80">
+                          Take full control of your financial journey — you
+                          decide how and when to manage your assets. Advanced
+                          security, smart automation, and customizable settings
+                          put you in complete command.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div
+                  class="py-4 px-3 rounded-4 bg-white-5 bg-filter-20 h-100 border-1 d-flex align-items-center gap-3 card-hover-translate card-hover-zooming"
+                >
+                  <div class="row gy-4 align-items-center">
+                    <div class="col-md-4">
+                      <div class="card-thumbnail card-hover-zooming-img">
+                        <img
+                          src="assets/images/thumbnails/withdrawals.png"
+                          alt="icon"
+                          class="w-100 rounded-2"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-content">
+                        <h6 class="text-white-100">Instant Withdrawals</h6>
+                        <p class="mt-2 text-white-80">
+                          Access your funds instantly whenever you need them.
+                          Our fast and secure withdrawal system ensures a smooth
+                          experience, with no waiting periods, unnecessary
+                          restrictions, or complicated processes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End why choose -->
     <!-- Start Cta -->
     <section class="cta-section text-center section-lg-mt">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="border-1 rounded-4 p-2">
-              <div class="bg-dark-blue rounded-4 position-relative">
+              <div class="rounded-4 position-relative bg-white-5 bg-filter-20">
                 <div
                   class="stars z-2"
                   star="120"
@@ -794,8 +1219,8 @@
                     <div
                       class="section-lg-ptb text-center position-relative z-2"
                     >
-                      <h3 class="text-heading">Ready to Trade Smarter?</h3>
-                      <p class="mt-3 text-heading">
+                      <h3 class="text-white-100">Ready to Trade Smarter?</h3>
+                      <p class="mt-3 text-white-80">
                         Join thousands of investors who trust us with their
                         capital
                       </p>
@@ -826,18 +1251,18 @@
             >
               <div class="footer-description">
                 <a href="#"><img src="assets/images/logo.png" alt="logo" /></a>
-                <p class="text-secondary mt-2">
+                <p class="mt-2 text-white-100">
                   Transparent prop trading for everyone
                 </p>
               </div>
               <div class="footer-nav">
                 <ul class="d-flex align-items-center gap-2 gap-sm-3">
-                  <li><a href="#" class="text-gray-light">Home</a></li>
-                  <li><a href="#" class="text-gray-light">How It Works</a></li>
-                  <li><a href="#" class="text-gray-light">Live Trades</a></li>
-                  <li><a href="#" class="text-gray-light">Pricing</a></li>
-                  <li><a href="#" class="text-gray-light">FAQ</a></li>
-                  <li><a href="#" class="text-gray-light">About</a></li>
+                  <li><a href="#" class="text-white-80">Home</a></li>
+                  <li><a href="#" class="text-white-80">How It Works</a></li>
+                  <li><a href="#" class="text-white-80">Live Trades</a></li>
+                  <li><a href="#" class="text-white-80">Pricing</a></li>
+                  <li><a href="#" class="text-white-80">FAQ</a></li>
+                  <li><a href="#" class="text-white-80">About</a></li>
                 </ul>
               </div>
               <div class="social-menu">
@@ -878,19 +1303,19 @@
             <div
               class="footer-bottom d-flex align-items-center justify-content-center justify-content-lg-between gap-lg-5 gap-2 flex-wrap flex-lg-nowrap mt-4 pt-4 pb-5"
             >
-              <p class="text-heading">
+              <p class="text-white-100">
                 &copy; 2025 TradePro. All rights reserved.
               </p>
               <div class="footer-nav">
                 <ul class="d-flex align-items-center gap-3 justify-content-end">
                   <li>
-                    <a href="#" class="text-gray-light">Privacy Policy</a>
+                    <a href="#" class="text-white-100">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="#" class="text-gray-light">Terms of Service</a>
+                    <a href="#" class="text-white-100">Terms of Service</a>
                   </li>
                   <li>
-                    <a href="#" class="text-gray-light">Cookies Settings</a>
+                    <a href="#" class="text-white-100">Cookies Settings</a>
                   </li>
                 </ul>
               </div>
@@ -909,17 +1334,20 @@
     ></script>
     <!-- Swiper slider JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- color piker js -->
+    <script src="assets/js/color-picker.js"></script>
+    <!-- partnership slider js -->
     <script>
-      const swiper = new Swiper(".swiper", {
+      const partnershipSlider = new Swiper(".partnership-slider", {
         slidesPerView: 5,
         centeredSlides: true,
         loop: true,
-        speed: 600,
-        autoplay: false,
-        // autoplay: {
-        //   delay: 1000,
-        //   disableOnInteraction: false,
-        // },
+        speed: 2000,
+        // autoplay: false,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false,
+        },
         grabCursor: true,
         breakpoints: {
           0: {
@@ -928,6 +1356,38 @@
 
           768: {
             slidesPerView: 5,
+          },
+        },
+      });
+    </script>
+    <!-- investor review slider js -->
+    <script>
+      const investorsReviewSlider = new Swiper(".investors-review-slider", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        loop: true,
+        speed: 1000,
+        spaceBetween: 20,
+        autoplay: false,
+        // autoplay: {
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // },
+        navigation: {
+          nextEl: "#swiper-slider-button-next",
+          prevEl: "#swiper-slider-button-prev",
+        },
+        grabCursor: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          550: {
+            slidesPerView: 2,
+          },
+
+          768: {
+            slidesPerView: 3,
           },
         },
       });
@@ -988,23 +1448,6 @@
             });
 
             container.appendChild(star);
-          }
-        });
-      });
-    </script>
-    <!-- Header sticky with animation -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const navbar = document.getElementById("mainNavbar");
-        const scrollTrigger =
-          parseInt(navbar.getAttribute("data-scroll")) || 300;
-        window.addEventListener("scroll", () => {
-          if (window.scrollY >= scrollTrigger) {
-            if (!navbar.classList.contains("sticky-top")) {
-              navbar.classList.add("sticky-top");
-            }
-          } else {
-            navbar.classList.remove("sticky-top");
           }
         });
       });

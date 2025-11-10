@@ -1,0 +1,56 @@
+.investor-review-card-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    117.1deg,
+    var(--brand) 35.08%,
+    var(--brand-secondary) 105.57%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s;
+}
+.investor-review-card-icon img {
+  max-width: 32px;
+  width: 100%;
+}
+.investor-review-author img {
+  max-width: 38px;
+  width: auto;
+}
+.investor-review-author p {
+  line-height: 18px;
+  font-weight: 400;
+}
+.investor-review-author h6 {
+  font-size: calc(var(--base) - 2px);
+  font-weight: 600;
+  line-height: 20px;
+}
+.investor-review-card:hover .investor-review-card-icon {
+  background: var(--brand-80);
+}
+@media all and (max-width: 991px) {
+  .investor-review-card-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .investor-review-card-icon img {
+    max-width: 22px;
+  }
+}
+.why-choose-section:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18%;
+  right: 0;
+  height: 85%;
+  width: 40%;
+  background-color: var(--brand-20);
+  filter: blur(100px);
+  z-index: -2;
+  margin: 0 auto;
+}

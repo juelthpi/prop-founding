@@ -5,11 +5,10 @@
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background: var(--dark-primary);
+  background: var(--brand);
 }
 .control-risk-card-label {
   font-size: 12px;
-  color: var(--dark-primary);
 }
 .loss-limit-section {
   background-image: url("../images/bg/live-trade-chart-1.png");

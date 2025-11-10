@@ -1,0 +1,132 @@
+.investor-review-card-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: linear-gradient(
+    117.1deg,
+    var(--brand) 35.08%,
+    var(--brand-secondary) 105.57%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.investor-review-card-icon img {
+  max-width: 32px;
+  width: 100%;
+}
+.investor-review-author img {
+  max-width: 38px;
+  width: auto;
+}
+.investor-review-author p {
+  line-height: 18px;
+  font-weight: 400;
+}
+.investor-review-author h6 {
+  font-size: calc(var(--base) - 2px);
+  font-weight: 600;
+  line-height: 20px;
+}
+@media all and (max-width: 991px) {
+  .investor-review-card-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .investor-review-card-icon img {
+    max-width: 22px;
+  }
+}
+.why-choose-section:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18%;
+  right: 0;
+  height: 85%;
+  width: 40%;
+  background-color: var(--brand-20);
+  filter: blur(100px);
+  z-index: -2;
+  margin: 0 auto;
+}
+/* Rectangle 6 */
+
+/* shape design  */
+.header-shape {
+  position: absolute;
+  top: -85px;
+  right: 190px;
+  width: 129px;
+  height: 772px;
+  background: linear-gradient(
+    to bottom,
+    var(--brand-100) 0%,
+    var(--black-70) 100%
+  );
+  border-radius: 50px;
+  transform: rotate(39deg);
+  filter: blur(24px);
+  z-index: -2;
+}
+.line-shape {
+  position: absolute;
+  top: -238px;
+  right: -210px;
+  /* width: 129px; */
+  /* height: 772px; */
+  z-index: -2;
+  filter: blur(0px);
+}
+.header-shape-container:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../images/shape/line-shape.png");
+  height: 700px;
+  width: 380px;
+  background-size: 100% 100%;
+}
+.header-shape-2-container {
+  position: absolute;
+  top: 75px;
+  right: 212px;
+  filter: blur(39px);
+  z-index: -2;
+}
+.header-shape-2 {
+  width: 120px;
+  height: 500px;
+  background: linear-gradient(
+    145deg,
+    var(--brand-100) 0%,
+    var(--brand-10) 70%,
+    var(--brand-5) 100%
+  );
+  z-index: -2;
+  position: relative;
+  transform: rotate(45deg) skewY(-10deg);
+  filter: blur(100px);
+}
+
+/* Glow effect layers */
+.header-shape-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: inherit;
+  filter: blur(100px);
+  opacity: 0.8;
+}
+
+.header-shape-2::after {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  border-radius: inherit;
+  background: inherit;
+  filter: blur(80px);
+  opacity: 0.4;
+}
