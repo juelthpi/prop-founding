@@ -98,16 +98,13 @@
   cursor: pointer;
   transition: 0.5s;
 }
-.swiper-slider-button:hover,
-.swiper-slider-button.active:hover {
-  background-color: var(--brand-70);
-}
-.swiper-slider-button.active {
+.swiper-slider-button:hover {
   background-color: var(--brand-100);
-  width: 65px;
+
   border-radius: 35px;
   border-color: transparent;
 }
+
 @media all and (max-width: 991px) {
   .partnership-slider.swiper {
     /* overflow: inherit; */

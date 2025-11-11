@@ -75,30 +75,18 @@ h6 {
     var(--white-10) 41.56%
   );
   background-size: 100% 100%;
-  animation: borderMove 0.8s linear infinite paused;
   -webkit-mask: linear-gradient(var(--white-100) 0 0) content-box,
     linear-gradient(var(--white-100) 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  z-index: -1;
+  transition: 0.5s;
+  /* z-index: -1; */
 }
 
 .gradient-border:hover::before {
-  animation-play-state: running;
-  background-size: 250% 250%;
+  background-size: 350% 350%;
 }
 
-@keyframes borderMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 p {
   margin: 0;
   padding: 0;
