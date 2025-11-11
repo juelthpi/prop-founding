@@ -27,8 +27,10 @@
     />
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- custom css -->
+    <!-- common css -->
     <link rel="stylesheet" href="assets/css/common.css" />
+    <!-- preloader css -->
+    <link rel="stylesheet" href="assets/css/preloader.css" />
     <!-- works steps css -->
     <link rel="stylesheet" href="assets/css/step-card.css" />
     <!-- transparency widget css -->
@@ -48,6 +50,24 @@
   </head>
   <!-- header-after-shape -->
   <body class="overflow-hidden">
+    <!--  Preloader Start -->
+    <div id="page-load-preloader">
+      <div class="page-load-signal-area">
+        <div class="page-load-orbit">
+          <span class="page-load-particle"></span>
+          <span class="page-load-particle"></span>
+          <span class="page-load-particle"></span>
+        </div>
+        <div class="page-load-logo">
+          <div class="page-load-circle"></div>
+          <h2>Prop<span>Funding</span></h2>
+        </div>
+      </div>
+      <div class="page-load-progress-bar">
+        <div class="page-load-progress"></div>
+      </div>
+    </div>
+    <!-- Preloader End  -->
     <!-- Header shape -->
     <div class="header-shape-container position-relative">
       <span class="header-shape"></span>
@@ -1626,6 +1646,26 @@
 
             container.appendChild(star);
           }
+        });
+      });
+    </script>
+    <!-- preloader js -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const progress = document.querySelector(".page-load-progress");
+        let width = 0;
+        const demoLoad = setInterval(() => {
+          if (width < 90) {
+            width += Math.random() * 10;
+            progress.style.width = width + "%";
+          }
+        }, 300);
+        window.addEventListener("load", () => {
+          clearInterval(demoLoad);
+          progress.style.width = "100%";
+          setTimeout(() => {
+            document.body.classList.add("page-load-loaded");
+          }, 500);
         });
       });
     </script>
