@@ -57,6 +57,9 @@
 .features-card-thumbnail img {
   transition: 0.5s;
   transform: scale(0.9);
+  max-height: 229px;
+  height: auto;
+  object-fit: contain;
 }
 .features-card:hover .features-card-thumbnail img {
   transform: scale(1);

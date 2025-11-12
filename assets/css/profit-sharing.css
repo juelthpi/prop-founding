@@ -75,8 +75,19 @@
   filter: blur(35px);
   opacity: 0.3;
 }
-.profit-sharing-card:hover .profit-sharing-card-icon img {
+.profit-sharing-card-thumbnails img {
+  transition: 0.5s;
+}
+.profit-sharing-card:hover .profit-sharing-card-icon img,
+.profit-sharing-card:hover .profit-sharing-card-thumbnails img {
   transform: translateY(-10px);
+}
+.profit-sharing-card-thumbnails img {
+  max-width: 170px;
+  max-height: 180px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 @media all and (max-width: 991px) {
   .profit-sharing-card-icon img {

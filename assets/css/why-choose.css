@@ -1,0 +1,42 @@
+.why-choose-section:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18%;
+  right: 0;
+  height: 85%;
+  width: 40%;
+  background-color: var(--brand-20);
+  filter: blur(100px);
+  z-index: -2;
+  margin: 0 auto;
+}
+.curve-line {
+  position: relative;
+}
+.curve-line:after {
+  content: "";
+  position: absolute;
+  left: 16%;
+  top: -37px;
+  height: 60px;
+  width: 350px;
+  background-image: url("../images/shape/curve-line.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.18;
+  z-index: -1;
+}
+.curve-line:before {
+  content: "";
+  position: absolute;
+  right: 16%;
+  top: -37px;
+  height: 60px;
+  width: 350px;
+  background-image: url("../images/shape/curve-line.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.18;
+  z-index: -1;
+}

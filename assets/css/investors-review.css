@@ -41,16 +41,3 @@
     max-width: 22px;
   }
 }
-.why-choose-section:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 18%;
-  right: 0;
-  height: 85%;
-  width: 40%;
-  background-color: var(--brand-20);
-  filter: blur(100px);
-  z-index: -2;
-  margin: 0 auto;
-}
