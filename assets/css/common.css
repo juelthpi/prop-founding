@@ -16,10 +16,6 @@
   --font-base: 16px;
   --section-gap-base: 120px;
 }
-
-html {
-  overflow-x: hidden !important;
-}
 body {
   margin: 0;
   padding: 0;
@@ -37,6 +33,10 @@ body {
   );
   background-size: 200px 100%;
   animation: moveLine 4s linear infinite;
+  overflow-x: hidden !important;
+}
+.has-aos {
+  overflow-x: hidden !important;
 }
 @keyframes moveLine {
   from {
@@ -317,7 +317,9 @@ h6 {
   filter: blur(32px);
   z-index: -2;
 }
-
+.header-shape-container {
+  overflow-x: clip;
+}
 .header-shape-container:after {
   content: "";
   position: absolute;
@@ -406,6 +408,7 @@ h6 {
 }
 .offcanvas {
   background-color: var(--black-85);
+  height: 100vh;
 }
 .country-select-dropdown .dropdown-item img,
 .country-select-dropdown button img {
@@ -428,6 +431,53 @@ h6 {
   border: 1px solid var(--white-10);
   background-color: var(--white-5);
 }
+/* start form css */
+.form-label {
+  color: var(--white-100);
+  font-size: calc(var(--base) - 2px);
+  font-weight: 500;
+}
+.is-invalid {
+  border-color: var(--warning-50) !important;
+  background-color: var(--warning-5) !important;
+}
+.invalid-feedback {
+  color: rgb(225, 71, 71) !important;
+}
+.is-valid {
+  border-color: #1f7934 !important;
+  background-color: #27783a24 !important;
+}
+.transition {
+  transition: all 0.5s ease;
+}
+
+.form-control {
+  border: 1px solid var(--white-5);
+  background: var(--white-5);
+  backdrop-filter: blur(94px);
+  padding: 10px 15px;
+  color: var(--white-80);
+  border-radius: 999px;
+}
+.form-control::placeholder {
+  opacity: 1;
+  color: var(--white-40);
+  font-weight: 400;
+  font-size: 14px;
+}
+.form-control:focus {
+  background: var(--brand-5);
+  border-color: var(--brand-15);
+  color: var(--white-80);
+}
+
+.form-control.is-valid,
+.form-control.is-invalid {
+  background-image: none !important;
+  background-repeat: no-repeat;
+}
+/* end form css */
 
 /* start footer css */
 .footer-nav ul li a {
@@ -734,9 +784,7 @@ body.blurred {
 .cookie-banner button {
   transition: all 0.3s ease;
 }
-.cookie-banner button:hover {
-  transform: scale(1.05);
-}
+
 .cookie-icon {
   height: 55px;
   max-width: 55px;
@@ -751,9 +799,4 @@ body.blurred {
 .cookie-icon img {
   max-width: 40px;
   width: 100%;
-}
-
-.cookie-banner:hover a {
-  transition: 0.5s;
-  color: var(--brand-100) !important;
 }

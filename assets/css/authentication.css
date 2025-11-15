@@ -1,0 +1,16 @@
+.authentication-card {
+  max-width: 560px;
+  width: 95%;
+  border: 1px solid var(--white-10);
+  backdrop-filter: blur(10px);
+  background: var(--white-5);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+@media all and (max-width: 767px) {
+  .authentication-card {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
