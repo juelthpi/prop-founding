@@ -55,6 +55,7 @@ h6 {
   margin: 0;
   padding: 0;
   font-family: var(--font-secondary);
+  color: var(--white-100);
 }
 .gradient-border {
   position: relative;
@@ -86,10 +87,17 @@ h6 {
 .gradient-border:hover::before {
   background-size: 350% 350%;
 }
-
+.shape-effect {
+  height: 500px;
+  width: 280px;
+  filter: blur(100px);
+  z-index: -1;
+  position: absolute;
+}
 p {
   margin: 0;
   padding: 0;
+  color: var(--white-80);
 }
 .section-lg-mt {
   margin-top: var(--section-gap-base);
@@ -101,7 +109,9 @@ p {
   padding-top: var(--section-gap-base);
   padding-bottom: var(--section-gap-base);
 }
-
+.section-md-mt {
+  margin-top: calc(var(--section-gap-base) - 40px);
+}
 .md-p {
   font-size: var(--font-base);
   font-weight: 400;
@@ -110,6 +120,10 @@ p {
   font-size: calc(var(--font-base) - 2px);
   font-weight: 400;
   line-height: 26px;
+}
+.xm-p {
+  font-size: calc(var(--font-base) - 5px);
+  line-height: 16px;
 }
 .bg-filter-20 {
   backdrop-filter: blur(20px);
@@ -170,7 +184,7 @@ h6 {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: calc(var(--font-base) + 2px);
   min-width: 175px;
   border: 1px solid var(--black-80);
@@ -228,6 +242,7 @@ h6 {
       25px -30px white;
   }
 }
+
 .secondary-btn {
   position: relative;
   background: var(--white-10);
@@ -237,7 +252,7 @@ h6 {
   justify-content: center;
   border-radius: 100px;
   border: 1px solid var(--white-60);
-  font-weight: 500;
+  font-weight: 400;
   font-size: calc(var(--font-base) + 2px);
   min-width: 175px;
   transition: 0.5s;
@@ -395,7 +410,7 @@ h6 {
   width: 100%;
 }
 .navbar-nav .nav-link {
-  font-weight: 500;
+  font-weight: 400;
   padding: 0.5rem 20px !important;
   font-size: var(--font-base);
   color: var(--white-80);
@@ -681,7 +696,8 @@ h6 {
     font-size: calc(var(--font-base) + 10px);
     line-height: 36px;
   }
-  .md-p {
+  .md-p,
+  p {
     font-size: calc(var(--font-base) - 2px);
   }
   .glow-circle {

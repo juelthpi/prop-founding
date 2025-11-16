@@ -1,0 +1,42 @@
+.core-values-card-icon {
+  height: 55px;
+  width: 55px;
+  border-radius: 10px;
+  background-color: var(--brand-10);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.core-values-card-icon img {
+  max-width: 40px;
+  width: 100%;
+  height: auto;
+}
+.core-values-card {
+  background: linear-gradient(
+    117.1deg,
+    var(--brand-5) 35.08%,
+    var(--brand-secondary-5) 105.57%
+  );
+  box-shadow: 0px 0px 114.96px 0px var(--black-10);
+
+  backdrop-filter: blur(200px);
+
+  position: relative;
+}
+.gradient-border::before {
+  background: linear-gradient(
+    -28.5deg,
+    var(--brand-100) -12.56%,
+    var(--white-10) 41.56%
+  );
+}
+
+.core-values-card:hover.gradient-border::before {
+  background: linear-gradient(
+    70.5deg,
+    var(--brand-100) -12.56%,
+    var(--white-10) 41.56%
+  ) !important;
+}
