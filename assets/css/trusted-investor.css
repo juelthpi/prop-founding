@@ -1,0 +1,10 @@
+.trusted-investor-logo img {
+  max-width: 120px;
+  width: auto;
+  height: auto;
+}
+@media all and (max-width: 767px) {
+  .trusted-investor-logo img {
+    max-width: 85px;
+  }
+}

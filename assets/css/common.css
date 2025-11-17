@@ -160,6 +160,10 @@ h3 {
   font-size: calc(var(--font-base) + 24px);
   line-height: 46px;
 }
+h4 {
+  font-size: calc(var(--font-base) + 16px);
+  line-height: 36px;
+}
 h5 {
   font-size: calc(var(--font-base) + 10px);
 
@@ -334,12 +338,13 @@ h6 {
 }
 .header-shape-container {
   overflow-x: clip;
+  z-index: -2;
 }
 .header-shape-container:after {
   content: "";
   position: absolute;
-  right: -160px;
-  top: -280px;
+  right: -200px;
+  top: -315px;
   background-image: url("../images/shape/line-shape.png");
   height: 780px;
   width: 620px;
@@ -630,8 +635,12 @@ h6 {
     font-size: calc(var(--font-base) + 16px);
     line-height: 40px;
   }
+  h4 {
+    font-size: calc(var(--font-base) + 8px);
+    line-height: 30px;
+  }
   h5 {
-    font-size: calc(var(--font-base) + 6px);
+    font-size: calc(var(--font-base) + 4px);
 
     line-height: 38px;
     font-weight: 600;
@@ -692,6 +701,10 @@ h6 {
     font-size: calc(var(--font-base) + 12px);
     line-height: 38px;
   }
+  h4 {
+    font-size: calc(var(--font-base) + 8px);
+    line-height: 30px;
+  }
   h5 {
     font-size: calc(var(--font-base) + 10px);
     line-height: 36px;
@@ -716,8 +729,12 @@ h6 {
 
     line-height: 34px;
   }
+  h4 {
+    font-size: calc(var(--font-base) + 4px);
+    line-height: 30px;
+  }
   h5 {
-    font-size: calc(var(--font-base) - 4px);
+    font-size: calc(var(--font-base) - 3px);
     line-height: 30px;
   }
   .section-lg-mt {

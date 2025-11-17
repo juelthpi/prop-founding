@@ -64,6 +64,7 @@
   position: relative;
   z-index: 2;
   border: 2px solid transparent;
+  transition: 0.5s;
 }
 .work-step-icon::after {
   content: "";

@@ -25,14 +25,8 @@
     <link rel="stylesheet" href="assets/css/custom-aos.css" />
     <!-- common css -->
     <link rel="stylesheet" href="assets/css/common.css" />
-    <!-- mission vision css -->
-    <link rel="stylesheet" href="assets/css/mission-vision.css" />
-    <!-- journey-roadmap css -->
-    <link rel="stylesheet" href="assets/css/journey-roadmap.css" />
-    <!-- core values css -->
-    <link rel="stylesheet" href="assets/css/core-values.css" />
-    <!-- trusted investor -->
-    <link rel="stylesheet" href="assets/css/trusted-investor.css" />
+    <!-- blog css -->
+    <link rel="stylesheet" href="assets/css/blog.css" />
     <!-- preloader css -->
     <link rel="stylesheet" href="assets/css/preloader.css" />
   </head>
@@ -104,7 +98,7 @@
                 <a class="nav-link" href="faq.html">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="about-us.html">About</a>
+                <a class="nav-link" href="about-us.html">About</a>
               </li>
             </ul>
           </div>
@@ -250,7 +244,7 @@
         <div class="row">
           <div class="col-md-7 text-md-start text-center">
             <h3 data-aos="fade-up" data-aos-duration="700">
-              Built on Trust. Driven by Transparency.
+              Insights & Analysis
             </h3>
             <p
               class="mt-3"
@@ -258,87 +252,272 @@
               data-aos-delay="150"
               data-aos-duration="800"
             >
-              We started this platform with a simple idea — to make professional
-              trading accessible, honest, and rewarding for everyone. Every
-              feature, every trade, every update — built to earn your trust and
-              grow together.
+              Expert perspectives on transparency, risk management, and
+              performance optimization in modern finance.
             </p>
           </div>
         </div>
       </div>
     </section>
     <!-- End page overview -->
-    <!-- Start mission vision -->
-    <section class="mission-vision-section section-lg-pt position-relative">
-      <div class="shape-effect shape-effect-mission"></div>
-      <div class="shape-effect shape-effect-vision"></div>
+    <!-- Start blog section -->
+    <section class="blog-section section-lg-pt section-md-mt bg-black-80">
       <div class="container">
-        <div class="row gy-4">
+        <div class="row gy-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h4>Discover Our Featured Blogs</h4>
+            <p class="mt-2 sm-p">Stay updated with our latest blog posts.</p>
+          </div>
           <div class="col-md-12">
-            <div class="rounded-3 bg-white-5 bg-filter-20 p-md-5 p-3">
-              <div class="row gy-4 align-items-center">
+            <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20">
+              <div class="row gy-4 align-items-center gx-5">
                 <div class="col-md-6">
-                  <div
-                    class="d-flex flex-column gap-3 text-center text-md-start"
-                  >
-                    <h4>Our Mission</h4>
-                    <p>
-                      To democratize access to high-performance trading — giving
-                      investors real transparency, traders fair rewards, and the
-                      market a new standard of integrity.
-                    </p>
-                    <p>
-                      We believe profit should follow clarity. That's why we
-                      built a system where data is open, actions are verified,
-                      and everyone wins together.
-                    </p>
+                  <div class="blog-thumbnails">
+                    <img
+                      src="assets/images/blog/blog-1.png"
+                      alt="img"
+                      class="w-100 rounded-3"
+                    />
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="mission-thumbnails text-md-end text-center">
-                    <img
-                      src="assets/images/thumbnails/mission.png"
-                      alt="mission"
-                      class="w-100"
-                      data-aos="zoom-in"
-                      data-aos-delay="150"
-                      data-aos-duration="800"
-                    />
+                  <ul class="d-flex align-items-center gap-3">
+                    <li>
+                      <span
+                        class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                        >Transparency</span
+                      >
+                    </li>
+                    <li><span class="text-white-75">March 15, 2025</span></li>
+                    <li><span class="text-white-75">5 min read</span></li>
+                  </ul>
+                  <div class="mt-4">
+                    <h6>
+                      The Future of Financial Transparency: Building Trust
+                      Through Data
+                    </h6>
+                    <p class="mt-2">
+                      Exploring how modern technology and open data practices
+                      are reshaping the financial industry's approach to
+                      transparency and accountability.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-12">
-            <div class="rounded-3 bg-white-5 bg-filter-20 p-5">
-              <div class="row gy-4 align-items-center gx-5">
-                <div class="col-md-6">
-                  <div class="vision-thumbnails text-center">
+            <ul
+              class="d-flex align-items-center gap-2 flex-wrap post-filter-btn"
+            >
+              <li class="active" data-filter="*">All Posts</li>
+              <li data-filter=".transparency">Transparency</li>
+              <li data-filter=".risk">Risk</li>
+              <li data-filter=".performance">Performance</li>
+            </ul>
+          </div>
+
+          <!-- Masonry Grid -->
+          <div class="col-md-12">
+            <div class="row gy-4 blog-masonry">
+              <!-- Card 1 (Risk) -->
+              <div class="col-lg-4 col-md-6 blog-item risk">
+                <div
+                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="blog-thumbnails">
                     <img
-                      src="assets/images/thumbnails/vision.png"
-                      alt="vision"
-                      class="w-100"
-                      data-aos="zoom-in"
-                      data-aos-delay="250"
-                      data-aos-duration="800"
+                      src="assets/images/blog/blog-1.png"
+                      class="w-100 rounded-3"
+                      alt="img"
                     />
                   </div>
+                  <div class="mt-4">
+                    <ul class="d-flex align-items-center gap-3">
+                      <li>
+                        <span
+                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                          >Risk</span
+                        >
+                      </li>
+                      <li><span class="text-white-75">March 15, 2025</span></li>
+                      <li><span class="text-white-75">5 min read</span></li>
+                    </ul>
+                    <div class="mt-4">
+                      <h6>Risk Management in Modern Portfolio Theory</h6>
+                      <p class="mt-2 sm-p">
+                        A comprehensive guide to understanding and implementing
+                        effective risk.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                  <div
-                    class="d-flex flex-column gap-3 text-center text-md-start"
-                  >
-                    <h4>Our Vision</h4>
-                    <p>
-                      To democratize access to high-performance trading — giving
-                      investors real transparency, traders fair rewards, and the
-                      market a new standard of integrity.
-                    </p>
-                    <p>
-                      We believe profit should follow clarity. That's why we
-                      built a system where data is open, actions are verified,
-                      and everyone wins together.
-                    </p>
+              </div>
+
+              <!-- Card 2 (Transparency) -->
+              <div class="col-lg-4 col-md-6 blog-item transparency">
+                <div
+                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="blog-thumbnails">
+                    <img
+                      src="assets/images/blog/blog-2.png"
+                      class="w-100 rounded-3"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <ul class="d-flex align-items-center gap-3">
+                      <li>
+                        <span
+                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                          >Transparency</span
+                        >
+                      </li>
+                      <li><span class="text-white-75">March 15, 2025</span></li>
+                      <li><span class="text-white-75">5 min read</span></li>
+                    </ul>
+                    <div class="mt-4">
+                      <h6>Performance Metrics That Actually Matter</h6>
+                      <p class="mt-2 sm-p">
+                        Beyond simple returns:How to create investment
+                        approaches that prioritize clarity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 (Transparency) -->
+              <div class="col-lg-4 col-md-6 blog-item transparency">
+                <div
+                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="blog-thumbnails">
+                    <img
+                      src="assets/images/blog/blog-2.png"
+                      class="w-100 rounded-3"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <ul class="d-flex align-items-center gap-3">
+                      <li>
+                        <span
+                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                          >Transparency</span
+                        >
+                      </li>
+                      <li><span class="text-white-75">March 15, 2025</span></li>
+                      <li><span class="text-white-75">5 min read</span></li>
+                    </ul>
+                    <div class="mt-4">
+                      <h6>Performance Metrics That Actually Matter</h6>
+                      <p class="mt-2 sm-p">
+                        Beyond simple returns:How to create investment
+                        approaches that prioritize clarity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 (Performance) -->
+              <div class="col-lg-4 col-md-6 blog-item performance">
+                <div
+                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="blog-thumbnails">
+                    <img
+                      src="assets/images/blog/blog-3.png"
+                      class="w-100 rounded-3"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <ul class="d-flex align-items-center gap-3">
+                      <li>
+                        <span
+                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                          >Performance</span
+                        >
+                      </li>
+                      <li><span class="text-white-75">March 15, 2025</span></li>
+                      <li><span class="text-white-75">5 min read</span></li>
+                    </ul>
+                    <div class="mt-4">
+                      <h6>Building Transparent Investment Strategies</h6>
+                      <p class="mt-2 sm-p">
+                        How to create investment approaches that prioritize
+                        clarity and openness with stakeholders.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 (Performance) -->
+              <div class="col-lg-4 col-md-6 blog-item risk">
+                <div
+                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="blog-thumbnails">
+                    <img
+                      src="assets/images/blog/blog-6.png"
+                      class="w-100 rounded-3"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <ul class="d-flex align-items-center gap-3">
+                      <li>
+                        <span
+                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                          >Performance</span
+                        >
+                      </li>
+                      <li><span class="text-white-75">March 15, 2025</span></li>
+                      <li><span class="text-white-75">5 min read</span></li>
+                    </ul>
+                    <div class="mt-4">
+                      <h6>Building Transparent Investment Strategies</h6>
+                      <p class="mt-2 sm-p">
+                        How to create investment approaches that prioritize
+                        clarity and openness with stakeholders.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 (Performance) -->
+              <div class="col-lg-4 col-md-6 blog-item performance">
+                <div
+                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                >
+                  <div class="blog-thumbnails">
+                    <img
+                      src="assets/images/blog/blog-5.png"
+                      class="w-100 rounded-3"
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <ul class="d-flex align-items-center gap-3">
+                      <li>
+                        <span
+                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                          >Performance</span
+                        >
+                      </li>
+                      <li><span class="text-white-75">March 15, 2025</span></li>
+                      <li><span class="text-white-75">5 min read</span></li>
+                    </ul>
+                    <div class="mt-4">
+                      <h6>Building Transparent Investment Strategies</h6>
+                      <p class="mt-2 sm-p">
+                        How to create investment approaches that prioritize
+                        clarity and openness with stakeholders.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -347,301 +526,122 @@
         </div>
       </div>
     </section>
-    <!-- End mission vision -->
-    <!-- journey section -->
-    <section class="journey-section section-lg-pt position-relative">
-      <!-- Read More Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div
-            class="modal-content bg-brand-10 bg-filter-20 border-1 border-brand-30"
-          >
-            <div class="modal-header">
-              <h6>The Idea</h6>
-              <button
-                type="button"
-                class="btn-close bg-white-100"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p class="text-white-60">
-                Began as a small trading collective focused on data
-                transparency. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Fugit aut, repellat, esse, quas obcaecati
-                aperiam voluptas dignissimos facere perspiciatis nostrum in sed
-                sapiente cum temporibus. Quae et officia odit recusandae! Began
-                as a small trading collective focused on data transparency.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-                aut, repellat, esse, quas obcaecati aperiam voluptas dignissimos
-                facere perspiciatis nostrum in sed sapiente cum temporibus. Quae
-                et officia odit recusandae! Began as a small trading collective
-                focused on data transparency. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Fugit aut, repellat, esse, quas
-                obcaecati aperiam voluptas dignissimos facere perspiciatis
-                nostrum in sed sapiente cum temporibus. Quae et officia odit
-                recusandae! Began as a small trading collective focused on data
-                transparency. Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Fugit aut, repellat, esse, quas obcaecati
-                aperiam voluptas dignissimos facere perspiciatis nostrum in sed
-                sapiente cum temporibus. Quae et officia odit recusandae! Began
-                as a small trading collective focused on data transparency.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-                aut, repellat, esse, quas obcaecati aperiam voluptas dignissimos
-                facere perspiciatis nostrum in sed sapiente cum temporibus. Quae
-                et officia odit recusandae!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- End blog section -->
+    <!-- Start latest blog section -->
+    <section class="latest-blog-section section-lg-pt position-relative">
       <div
         class="stars"
         star="200"
         speed="fast"
         area="top-left"
-        width="100"
-        height="70"
-      ></div>
-
-      <h3 class="text-center pb-4">Our Journey So Far</h3>
-
-      <!-- Inner scroll container -->
-      <div class="journey-inner-container-inner">
-        <div class="journey-inner-container">
-          <div class="timeline gap-1 mt-5">
-            <!-- item -->
-            <div
-              class="timeline-item"
-              data-aos="zoom-in"
-              data-aos-delay="250"
-              data-aos-duration="800"
-            >
-              <span>2021</span>
-              <div class="timeline-content mt-4">
-                <h5>The Idea</h5>
-                <p class="mt-2">
-                  Began as a small trading collective focused on data
-                  transparency.
-                </p>
-                <!-- Button trigger modal -->
-                <div class="d-flex justify-content-end mt-3">
-                  <button
-                    type="button"
-                    class="primary-btn primary-btn-sm"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    See More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- item -->
-            <div
-              class="timeline-item"
-              data-aos="zoom-in"
-              data-aos-delay="250"
-              data-aos-duration="800"
-            >
-              <span>2022</span>
-              <div class="timeline-content mt-4">
-                <h5>Prototype Launch</h5>
-                <p class="mt-2">
-                  Built the first version of our automated trading dashboard.
-                </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div
-              class="timeline-item"
-              data-aos="zoom-in"
-              data-aos-delay="250"
-              data-aos-duration="800"
-            >
-              <span>2023</span>
-              <div class="timeline-content mt-4">
-                <h5>Scaling Up</h5>
-                <p class="mt-2">
-                  Partnered with verified prop traders and onboarded our first
-                  500 users.
-                </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div
-              class="timeline-item"
-              data-aos="zoom-in"
-              data-aos-delay="250"
-              data-aos-duration="800"
-            >
-              <span>2024</span>
-              <div class="timeline-content mt-4">
-                <h5>Global Expansion</h5>
-                <p class="mt-2">
-                  Introduced cross-border payment support and performance
-                  tracking tools.
-                </p>
-              </div>
-            </div>
-            <!-- item -->
-            <div
-              class="timeline-item"
-              data-aos="zoom-in"
-              data-aos-delay="250"
-              data-aos-duration="800"
-            >
-              <span>2025</span>
-              <div class="timeline-content mt-4">
-                <h5>Now</h5>
-                <p class="mt-2">
-                  Powering transparent trading for thousands worldwide — and
-                  just getting started.
-                </p>
-              </div>
-            </div>
-            <div class="timeline-progress-circle"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Start core value -->
-    <section class="core-values-section section-lg-pt position-relative">
-      <div class="shape-effect shape-effect-core-value"></div>
-      <div
-        class="stars"
-        star="80"
-        speed="fast"
-        area="top-left"
         width="40"
-        height="90"
+        height="40"
       ></div>
       <div class="container">
         <div class="row">
-          <div class="col-md-10 offset-md-1">
-            <h3 class="text-center">What We Stand For</h3>
+          <div class="col-md-8 offset-md-2 text-center">
+            <h4 data-aos="fade-up" data-aos-duration="700">
+              Discover Our Latest Blogs
+            </h4>
+            <p class="mt-3">Stay up to date with our informative blog posts.</p>
           </div>
         </div>
         <div class="row gy-4 mt-5">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="core-values-card p-3 rounded-3 gradient-border h-100">
-              <div class="core-values-card-icon">
-                <img src="assets/images/icon/transparency.png" alt="icon" />
+          <div class="col-lg-4 col-md-6">
+            <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
+              <div class="blog-thumbnails">
+                <img
+                  src="assets/images/blog/blog-6.png"
+                  class="w-100 rounded-3"
+                  alt="img"
+                />
               </div>
-              <div class="mt-5">
-                <h6>Transparency</h6>
-                <p class="mt-2">Every number, trade, and return is visible.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="core-values-card p-3 rounded-3 gradient-border h-100">
-              <div class="core-values-card-icon">
-                <img src="assets/images/icon/fairness.png" alt="icon" />
-              </div>
-              <div class="mt-5">
-                <h6>Fairness</h6>
-                <p class="mt-2">Equal opportunity for traders and investors.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="core-values-card p-3 rounded-3 gradient-border h-100">
-              <div class="core-values-card-icon">
-                <img src="assets/images/icon/innovation.png" alt="icon" />
-              </div>
-              <div class="mt-5">
-                <h6>Innovation</h6>
-                <p class="mt-2">Using tech to simplify, not complicate.</p>
+              <div class="mt-4">
+                <ul class="d-flex align-items-center gap-3">
+                  <li>
+                    <span
+                      class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                      >Transparency</span
+                    >
+                  </li>
+                  <li><span class="text-white-75">March 15, 2025</span></li>
+                  <li><span class="text-white-75">5 min read</span></li>
+                </ul>
+                <div class="mt-4">
+                  <h6>Performance Metrics That Actually Matter</h6>
+                  <p class="mt-2 sm-p">
+                    Beyond simple returns:How to create investment approaches
+                    that prioritize clarity.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="core-values-card p-3 rounded-3 gradient-border h-100">
-              <div class="core-values-card-icon">
-                <img src="assets/images/icon/community.png" alt="icon" />
+          <div class="col-lg-4 col-md-6">
+            <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
+              <div class="blog-thumbnails">
+                <img
+                  src="assets/images/blog/blog-4.png"
+                  class="w-100 rounded-3"
+                  alt="img"
+                />
               </div>
-              <div class="mt-5">
-                <h6>Community</h6>
-                <p class="mt-2">Growth through shared success.</p>
+              <div class="mt-4">
+                <ul class="d-flex align-items-center gap-3">
+                  <li>
+                    <span
+                      class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                      >Transparency</span
+                    >
+                  </li>
+                  <li><span class="text-white-75">March 15, 2025</span></li>
+                  <li><span class="text-white-75">5 min read</span></li>
+                </ul>
+                <div class="mt-4">
+                  <h6>Performance Metrics That Actually Matter</h6>
+                  <p class="mt-2 sm-p">
+                    Beyond simple returns:How to create investment approaches
+                    that prioritize clarity.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- End core value -->
-    <!-- Start trusted partner -->
-    <section class="trusted-investor-section section-lg-pt">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <h3
-              class="text-center text-white-100 aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-duration="700"
-            >
-              Trusted by Partners and Investors
-            </h3>
-            <p class="mt-3 text-center text-white-80">
-              We collaborate with industry-leading brokers, payment providers,
-              and analytics firms to ensure safety and scale, enabling seamless
-              global operations with reliable support for traders everywhere.
-            </p>
-          </div>
-          <div class="col-md-12">
-            <div
-              class="trusted-investor-logo d-flex align-items-center flex-wrap gap-md-4 gap-3 justify-content-center mt-5 pt-4"
-            >
-              <a href="#"
-                ><img
-                  src="assets/images/trusted-investor/investor-1.png"
-                  alt="logo"
-              /></a>
-              <a href="#"
-                ><img
-                  src="assets/images/trusted-investor/investor-2.png"
-                  alt="logo"
-              /></a>
-              <a href="#"
-                ><img
-                  src="assets/images/trusted-investor/investor-3.png"
-                  alt="logo"
-              /></a>
-              <a href="#"
-                ><img
-                  src="assets/images/trusted-investor/investor-4.png"
-                  alt="logo"
-              /></a>
-              <a href="#"
-                ><img
-                  src="assets/images/trusted-investor/investor-5.png"
-                  alt="logo"
-              /></a>
-              <a href="#"
-                ><img
-                  src="assets/images/trusted-investor/investor-6.png"
-                  alt="logo"
-              /></a>
-              <a href="#"
-                ><img
-                  src="assets/images/trusted-investor/investor-7.png"
-                  alt="logo"
-              /></a>
+          <div class="col-lg-4 col-md-6">
+            <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
+              <div class="blog-thumbnails">
+                <img
+                  src="assets/images/blog/blog-5.png"
+                  class="w-100 rounded-3"
+                  alt="img"
+                />
+              </div>
+              <div class="mt-4">
+                <ul class="d-flex align-items-center gap-3">
+                  <li>
+                    <span
+                      class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                      >Transparency</span
+                    >
+                  </li>
+                  <li><span class="text-white-75">March 15, 2025</span></li>
+                  <li><span class="text-white-75">5 min read</span></li>
+                </ul>
+                <div class="mt-4">
+                  <h6>Performance Metrics That Actually Matter</h6>
+                  <p class="mt-2 sm-p">
+                    Beyond simple returns:How to create investment approaches
+                    that prioritize clarity.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End trusted partner -->
+    <!-- End latest blog section -->
+
     <!-- Start Cta -->
     <section class="cta-section text-center section-lg-mt">
       <div class="container">
@@ -795,39 +795,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <!-- Cookie Consent Banner -->
-    <div class="cookie-overlay" id="cookieOverlay"></div>
-    <div class="cookie-banner shadow-lg rounded-3 p-4" id="cookieBanner">
-      <div class="d-flex align-items-start gap-4 flex-wrap flex-sm-nowrap">
-        <div class="cookie-icon">
-          <img src="assets/images/icon/verified.svg" alt="icon" />
-        </div>
-        <div class="flex-grow-1">
-          <h6 class="text-white-100">Manage Your Privacy Preferences</h6>
-          <p class="mb-3 text-white-80 mt-3 sm-p">
-            We use cookies to enhance your browsing experience, analyze site
-            traffic, and deliver personalized content tailored just for you.
-          </p>
-        </div>
-      </div>
-      <div
-        class="d-flex align-items-center flex-wrap flex-sm-nowrap gap-3 mt-3 mt-md-5 justify-content-between"
-      >
-        <a
-          href="#"
-          class="text-white-100 text-decoration-underline hover:text-brand-100 transition"
-          >Cookies Settings</a
-        >
-        <div class="d-flex align-items-center gap-2">
-          <button class="secondary-btn secondary-btn-sm" id="declineCookies">
-            Decline
-          </button>
-          <button class="primary-btn primary-btn-sm" id="acceptCookies">
-            Accept
-          </button>
-        </div>
-      </div>
-    </div>
 
     <!-- bootstrap js -->
     <script
@@ -835,55 +802,10 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <!-- Swiper slider JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- cookie js -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const banner = document.getElementById("cookieBanner");
-        const overlay = document.getElementById("cookieOverlay");
-        const acceptBtn = document.getElementById("acceptCookies");
-        const declineBtn = document.getElementById("declineCookies");
-        let bannerShown = false;
 
-        // Scroll trigger
-        window.addEventListener("scroll", function () {
-          if (
-            window.scrollY > 50 &&
-            !bannerShown &&
-            !localStorage.getItem("cookieConsent")
-          ) {
-            banner.classList.add("show");
-            overlay.classList.add("show");
-            document.body.classList.add("blurred");
-            bannerShown = true;
-          }
-        });
-
-        // Hide function
-        function hideCookieBanner() {
-          banner.classList.remove("show");
-          banner.classList.add("hide");
-          overlay.classList.remove("show");
-          overlay.classList.add("hide");
-          document.body.classList.remove("blurred");
-        }
-
-        // Accept
-        acceptBtn.addEventListener("click", function () {
-          localStorage.setItem("cookieConsent", "accepted");
-          hideCookieBanner();
-        });
-
-        // Decline
-        declineBtn.addEventListener("click", function () {
-          localStorage.setItem("cookieConsent", "declined");
-          hideCookieBanner();
-        });
-      });
-    </script>
     <!-- aos animation -->
     <script>
       AOS.init({
@@ -892,6 +814,32 @@
         mirror: true,
         easing: "ease-in-out",
         offset: 120,
+      });
+    </script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var grid = document.querySelector(".blog-masonry");
+
+        var iso = new Isotope(grid, {
+          itemSelector: ".blog-item",
+          layoutMode: "fitRows",
+          transitionDuration: "0.4s",
+        });
+
+        // Filter buttons
+        document.querySelectorAll(".post-filter-btn li").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            document
+              .querySelector(".post-filter-btn .active")
+              .classList.remove("active");
+            this.classList.add("active");
+
+            let filter = this.getAttribute("data-filter");
+            iso.arrange({ filter: filter });
+          });
+        });
       });
     </script>
 
@@ -972,38 +920,7 @@
         }
       });
     </script>
-    <!-- journey section scrolling  -->
-    <script>
-      const journeySection = document.querySelector(".timeline");
-      const circle = document.querySelector(".timeline-progress-circle");
-      let active = false;
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            active = entry.isIntersecting;
-          });
-        },
-        { threshold: 0.1 }
-      );
 
-      observer.observe(journeySection);
-
-      window.addEventListener("scroll", () => {
-        if (!active) return;
-        const rect = journeySection.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        const progress = Math.min(
-          Math.max((windowHeight - rect.top) / (rect.height + windowHeight), 0),
-          1
-        );
-        const timeline = document.querySelector(".timeline");
-        const timelineHeight = timeline.offsetHeight - 10;
-
-        const moveY = progress * timelineHeight;
-
-        circle.style.transform = `translateY(${moveY}px)`;
-      });
-    </script>
     <script src="assets/js/global.js"></script>
   </body>
 </html>

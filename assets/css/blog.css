@@ -1,0 +1,31 @@
+.post-filter-btn li {
+  color: var(--white-100);
+  font-size: calc(var(--font-base) + 2);
+  padding: 3px 12px;
+  display: inline-block;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.post-filter-btn li:hover {
+  color: var(--brand-100);
+}
+.post-filter-btn li.active {
+  border-color: var(--brand-100);
+  color: var(--brand-100);
+}
+.blog-masonry {
+  transition: height 0.4s ease;
+  overflow: hidden;
+}
+
+.blog-item {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.blog-item.isotope-hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}

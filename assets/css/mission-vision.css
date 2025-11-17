@@ -7,10 +7,19 @@
   right: 5%;
   background-color: var(--brand-60);
   transform: rotate(-45deg);
+  opacity: 0.5;
 }
 .shape-effect-vision {
   top: 45%;
   left: 5%;
   background-color: var(--blue-60);
   transform: rotate(40deg);
+  opacity: 0.5;
+}
+.shape-effect-core-value {
+  top: 45%;
+  left: 0%;
+  background-color: var(--brand-60);
+  transform: rotate(20deg);
+  opacity: 0.4;
 }
