@@ -27,10 +27,10 @@
 
     <!-- common css -->
     <link rel="stylesheet" href="assets/css/common.css" />
+    <!-- profit sharing css -->
+    <link rel="stylesheet" href="assets/css/profit-sharing.css" />
     <!-- preloader css -->
     <link rel="stylesheet" href="assets/css/preloader.css" />
-    <!-- accordion css -->
-    <link rel="stylesheet" href="assets/css/accordion.css" />
   </head>
   <!-- header-after-shape -->
   <body>
@@ -90,16 +90,18 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">How It Works</a>
+                <a class="nav-link active" href="how-work.html">How It Works</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Live Trades</a>
               </li>
               <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
               <li class="nav-item">
-                <a class="nav-link active" href="faq.html">FAQ</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
             </ul>
           </div>
 
@@ -237,13 +239,14 @@
       </nav>
     </header>
     <!-- End Header -->
+
     <!-- Start page overview -->
     <section class="page-overview-section section-md-mt">
       <div class="container">
         <div class="row">
           <div class="col-md-7 text-md-start text-center">
             <h3 data-aos="fade-up" data-aos-duration="700">
-              Frequently Asked Questions
+              Trade Smarter, Not Harder.
             </h3>
             <p
               class="mt-3"
@@ -251,253 +254,204 @@
               data-aos-delay="150"
               data-aos-duration="800"
             >
-              Find answers to common questions about our platform
+              See exactly how your money moves — from deposit to profit. Our
+              platform combines transparency, automation, and real-time insights
+              so you can invest with confidence.
             </p>
+            <div class="d-flex align-items-center gap-3 mt-4">
+              <a href="sign-up.html" class="primary-btn">Create Free Account</a>
+              <a href="#" class="secondary-btn">Watch Demo</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- End page overview -->
-    <section class="faq-section section-lg-mt">
+    <!-- Start trading journey -->
+    <section
+      class="trading-journey-section section-lg-mt section-lg-pt bg-black-5 bg-filter-20 position-relative"
+    >
+      <div
+        class="stars"
+        star="200"
+        speed="fast"
+        area="top-left"
+        width="100"
+        height="80"
+      ></div>
       <div class="container">
-        <div class="row gy-5">
-          <!-- item -->
-          <div class="col-md-12">
-            <h5 class="text-white-100 mb-4">Getting Started</h5>
+        <div class="row align-items-center gy-4">
+          <div class="col-md-8 text-center text-md-start">
+            <h4 data-aos="fade-up" data-aos-duration="700">
+              Your Trading Journey
+            </h4>
+            <p class="mt-3">
+              Unlike other platforms, we don’t hide behind numbers or delayed
+              reports. Our Live Transparency Feed gives you verified trade
+              screenshots, ticker updates, and performance metrics as they
+              happen.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="d-flex justify-content-md-end justify-content-center">
+              <a
+                href="sign-up.html"
+                class="primary-btn"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-duration="700"
+                >Start Your First Trade</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row gy-4 justify-content-center mt-5">
+          <div class="col-lg-4 col-md-6">
             <div
-              class="accordion d-flex flex-column gap-2"
-              id="accordionPanelsStayOpenExample"
+              class="profit-sharing-card text-center position-relative overflow-hidden h-100"
+              data-aos="flip-left"
+              data-aos-delay="100"
+              data-aos-duration="900"
             >
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne"
-                  >
-                    Accordion Item #1
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseOne"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
+              <div class="profit-sharing-card-thumbnails position-relative">
+                <img
+                  src="assets/images/thumbnails/security-info.png"
+                  alt="icon"
+                />
+                <div class="profit-sharing-card-effect"></div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo"
-                  >
-                    Accordion Item #2
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseTwo"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">
-                      Can the first-cut change? Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Eos sit voluptatum molestias
-                      cupiditate harum, facilis minus perferendis rerum, ullam
-                      quam ducimus modi qui suscipit officia nulla odio, alias
-                      placeat assumenda.
-                    </p>
-                  </div>
-                </div>
+              <div class="profit-sharing-content mt-5">
+                <h6 class="text-white-90">Sign Up & KYC</h6>
+                <p class="sm-p mt-3 text-white-70">
+                  Create your account and complete quick identity verification
+                  for secure access.
+                </p>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree"
-                  >
-                    Accordion Item #3
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseThree"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
-              </div>
+              <span class="step-number">01</span>
             </div>
           </div>
-          <!-- item -->
-          <div class="col-md-12">
-            <h5 class="text-white-100 mb-4">Deposits/Withdrawals</h5>
-            <div class="accordion d-flex flex-column gap-2">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Deposits-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="Deposits-collapseOne"
-                  >
-                    Do I control my risk?
-                  </button>
-                </h2>
-                <div
-                  id="Deposits-collapseOne"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="profit-sharing-card text-center position-relative overflow-hidden h-100"
+              data-aos="flip-up"
+              data-aos-delay="250"
+              data-aos-duration="900"
+            >
+              <div class="profit-sharing-card-thumbnails position-relative">
+                <img
+                  src="assets/images/thumbnails/deposit-funds.png"
+                  alt="icon"
+                />
+                <div class="profit-sharing-card-effect"></div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Deposits-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="Deposits-collapseTwo"
-                  >
-                    Do I pay fees on losses?
-                  </button>
-                </h2>
-                <div
-                  id="Deposits-collapseTwo"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">
-                      Can the first-cut change? Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Eos sit voluptatum molestias
-                      cupiditate harum, facilis minus perferendis rerum, ullam
-                      quam ducimus modi qui suscipit officia nulla odio, alias
-                      placeat assumenda.
-                    </p>
-                  </div>
-                </div>
+              <div class="profit-sharing-content mt-5">
+                <h6 class="text-white-90">Deposit Funds</h6>
+                <p class="sm-p mt-3 text-white-70">
+                  Add your preferred capital via secure payment gateways. No
+                  hidden fees.
+                </p>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Deposits-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="Deposits-collapseThree"
-                  >
-                    How do I receive my payout?
-                  </button>
-                </h2>
-                <div
-                  id="Deposits-collapseThree"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
-              </div>
+              <span class="step-number">02</span>
             </div>
           </div>
-          <!-- item -->
-          <div class="col-md-12">
-            <h5 class="text-white-100 mb-4">Risk & Limits</h5>
-            <div class="accordion d-flex flex-column gap-2">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Risk-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="Risk-collapseOne"
-                  >
-                    Do I control my risk?
-                  </button>
-                </h2>
-                <div
-                  id="Risk-collapseOne"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="profit-sharing-card text-center position-relative overflow-hidden h-100"
+              data-aos="flip-right"
+              data-aos-delay="400"
+              data-aos-duration="900"
+            >
+              <div class="profit-sharing-card-thumbnails position-relative">
+                <img src="assets/images/thumbnails/risk-level.png" alt="icon" />
+                <div class="profit-sharing-card-effect"></div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Risk-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="Risk-collapseTwo"
-                  >
-                    Do I pay fees on losses?
-                  </button>
-                </h2>
-                <div id="Risk-collapseTwo" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    <p class="text-white-70">
-                      Can the first-cut change? Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Eos sit voluptatum molestias
-                      cupiditate harum, facilis minus perferendis rerum, ullam
-                      quam ducimus modi qui suscipit officia nulla odio, alias
-                      placeat assumenda.
-                    </p>
-                  </div>
-                </div>
+              <div class="profit-sharing-content mt-5">
+                <h6 class="text-white-90">Set Your Risk Level</h6>
+                <p class="sm-p mt-3 text-white-70">
+                  Choose your risk preference — conservative, balanced, or
+                  aggressive. We trade according to your comfort zone.
+                </p>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Risk-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="Risk-collapseThree"
-                  >
-                    How do I receive my payout?
-                  </button>
-                </h2>
-                <div
-                  id="Risk-collapseThree"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
+              <span class="step-number">03</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="profit-sharing-card text-center position-relative overflow-hidden h-100"
+              data-aos="flip-right"
+              data-aos-delay="400"
+              data-aos-duration="900"
+            >
+              <div class="profit-sharing-card-thumbnails position-relative">
+                <img
+                  src="assets/images/thumbnails/participate-trading.png"
+                  alt="icon"
+                />
+                <div class="profit-sharing-card-effect"></div>
               </div>
+              <div class="profit-sharing-content mt-5">
+                <h6 class="text-white-90">Participate in Trading</h6>
+                <p class="sm-p mt-3 text-white-70">
+                  Your funds join our verified prop traders who manage positions
+                  across global markets in real time.
+                </p>
+              </div>
+              <span class="step-number">04</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="profit-sharing-card text-center position-relative overflow-hidden h-100"
+              data-aos="flip-right"
+              data-aos-delay="400"
+              data-aos-duration="900"
+            >
+              <div class="profit-sharing-card-thumbnails position-relative">
+                <img
+                  src="assets/images/thumbnails/Settlement-performance.png"
+                  alt="icon"
+                />
+                <div class="profit-sharing-card-effect"></div>
+              </div>
+              <div class="profit-sharing-content mt-5">
+                <h6 class="text-white-90">Settlement & Performance</h6>
+                <p class="sm-p mt-3 text-white-70">
+                  Track open positions, live PnL, and automated settlements once
+                  trading cycles close.
+                </p>
+              </div>
+              <span class="step-number">05</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="profit-sharing-card text-center position-relative overflow-hidden h-100"
+              data-aos="flip-right"
+              data-aos-delay="400"
+              data-aos-duration="900"
+            >
+              <div class="profit-sharing-card-thumbnails position-relative">
+                <img
+                  src="assets/images/thumbnails/withdraw-profits-anytime.png"
+                  alt="icon"
+                />
+                <div class="profit-sharing-card-effect"></div>
+              </div>
+              <div class="profit-sharing-content mt-5">
+                <h6 class="text-white-90">Withdraw Profits Anytime</h6>
+                <p class="sm-p mt-3 text-white-70">
+                  Instantly withdraw your returns directly to your bank or
+                  crypto wallet.
+                </p>
+              </div>
+              <span class="step-number">06</span>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- End trading journey -->
     <!-- Start Cta -->
     <section class="cta-section text-center section-lg-mt">
       <div class="container">
@@ -720,7 +674,19 @@
         });
       });
     </script>
+    <!-- scrolling header js -->
+    <script>
+      // scroll event listener
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header-area");
 
+        if (window.scrollY > 200) {
+          header.classList.add("scrolled"); // new class add
+        } else {
+          header.classList.remove("scrolled"); // remove when back
+        }
+      });
+    </script>
     <script src="assets/js/global.js"></script>
   </body>
 </html>

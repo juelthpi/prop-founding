@@ -35,3 +35,8 @@
 .accordion-button.collapsed {
   color: var(--white-100) !important;
 }
+@media all and(max-width:557px) {
+  .accordion-button {
+    font-size: 16px;
+  }
+}

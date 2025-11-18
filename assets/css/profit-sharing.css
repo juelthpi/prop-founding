@@ -7,6 +7,10 @@
   border: 1px solid var(--white-5);
   border-radius: 30px;
   cursor: pointer;
+  transition: 0.5s;
+}
+.profit-sharing-card:hover {
+  transform: translateY(-10px);
 }
 .profit-sharing-card-icon img {
   max-width: 220px;
@@ -56,17 +60,59 @@
   width: 147px;
 }
 
-.row > .col-lg-4:nth-child(2) .profit-sharing-card .profit-sharing-card-effect {
+.row
+  > .col-lg-4:nth-child(6n + 1)
+  .profit-sharing-card
+  .profit-sharing-card-effect {
+  background-color: var(--yellow-100);
+}
+.row > .col-lg-4:nth-child(6n + 1) .profit-sharing-card:after {
+  background-color: var(--yellow-100);
+}
+.row
+  > .col-lg-4:nth-child(6n + 2)
+  .profit-sharing-card
+  .profit-sharing-card-effect {
   background-color: var(--purple-100);
 }
-.row > .col-lg-4:nth-child(2) .profit-sharing-card:after {
+.row > .col-lg-4:nth-child(6n + 2) .profit-sharing-card:after {
   background-color: var(--purple-100);
 }
-.row > .col-lg-4:nth-child(3) .profit-sharing-card .profit-sharing-card-effect {
+.row
+  > .col-lg-4:nth-child(6n + 3)
+  .profit-sharing-card
+  .profit-sharing-card-effect {
   background-color: var(--warning-100);
 }
-.row > .col-lg-4:nth-child(3) .profit-sharing-card:after {
+.row > .col-lg-4:nth-child(6n + 3) .profit-sharing-card:after {
   background-color: var(--warning-100);
+}
+.row
+  > .col-lg-4:nth-child(6n + 4)
+  .profit-sharing-card
+  .profit-sharing-card-effect {
+  background-color: var(--indigo-100);
+}
+.row > .col-lg-4:nth-child(6n + 4) .profit-sharing-card:after {
+  background-color: var(--indigo-100);
+}
+.row
+  > .col-lg-4:nth-child(6n + 5)
+  .profit-sharing-card
+  .profit-sharing-card-effect {
+  background-color: var(--neon-100);
+}
+.row > .col-lg-4:nth-child(6n + 5) .profit-sharing-card:after {
+  background-color: var(--neon-100);
+}
+.row
+  > .col-lg-4:nth-child(6n + 6)
+  .profit-sharing-card
+  .profit-sharing-card-effect {
+  background-color: var(--brand-80);
+}
+.row > .col-lg-4:nth-child(6n + 6) .profit-sharing-card:after {
+  background-color: var(--brand-80);
 }
 .profit-sharing-card:hover .profit-sharing-card-effect {
   width: 100%;
@@ -87,7 +133,20 @@
   max-height: 180px;
   width: 100%;
   height: auto;
+  min-height: 180px;
   object-fit: contain;
+}
+.step-number {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: calc(var(--font-base) + 12px);
+  color: var(--white-20);
+  font-weight: 700;
+  transition: 0.5s;
+}
+.profit-sharing-card:hover .step-number {
+  color: var(--white-100);
 }
 @media all and (max-width: 991px) {
   .profit-sharing-card-icon img {

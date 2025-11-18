@@ -20,17 +20,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/custom-aos.css" />
     <!-- common css -->
     <link rel="stylesheet" href="assets/css/common.css" />
+    <!-- blog css -->
+    <link rel="stylesheet" href="assets/css/blog.css" />
     <!-- preloader css -->
     <link rel="stylesheet" href="assets/css/preloader.css" />
-    <!-- accordion css -->
-    <link rel="stylesheet" href="assets/css/accordion.css" />
   </head>
   <!-- header-after-shape -->
   <body>
@@ -52,14 +50,7 @@
       </div>
     </div>
     <!-- Preloader End  -->
-    <!-- Header shape -->
-    <div class="header-shape-container position-relative">
-      <span class="header-shape"></span>
-      <div class="header-shape-2-container">
-        <div class="header-shape-2"></div>
-      </div>
-      <div class="line-shape"></div>
-    </div>
+
     <!-- Start Header -->
     <header class="header-area">
       <nav class="navbar navbar-expand-xl fixed-top">
@@ -97,9 +88,11 @@
               </li>
               <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
               <li class="nav-item">
-                <a class="nav-link active" href="faq.html">FAQ</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About</a>
+              </li>
             </ul>
           </div>
 
@@ -236,14 +229,18 @@
         </div>
       </nav>
     </header>
+
     <!-- End Header -->
-    <!-- Start page overview -->
-    <section class="page-overview-section section-md-mt">
-      <div class="container">
+    <!-- Start blog page overview -->
+    <section class="page-overview-section blog-details-overview">
+      <div class="blog-details-thumbnails">
+        <img src="assets/images/blog/blog-1.png" alt="blog" class="w-100" />
+      </div>
+      <div class="container blog-details-overview-inner">
         <div class="row">
-          <div class="col-md-7 text-md-start text-center">
+          <div class="col-md-8 text-center offset-md-2">
             <h3 data-aos="fade-up" data-aos-duration="700">
-              Frequently Asked Questions
+              Risk Management in Modern Portfolio
             </h3>
             <p
               class="mt-3"
@@ -251,253 +248,132 @@
               data-aos-delay="150"
               data-aos-duration="800"
             >
-              Find answers to common questions about our platform
+              Expert perspectives on transparency, risk management, and
+              performance optimization in modern finance.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- End page overview -->
-    <section class="faq-section section-lg-mt">
-      <div class="container">
-        <div class="row gy-5">
-          <!-- item -->
           <div class="col-md-12">
-            <h5 class="text-white-100 mb-4">Getting Started</h5>
             <div
-              class="accordion d-flex flex-column gap-2"
-              id="accordionPanelsStayOpenExample"
+              class="post-author-info rounded-3 py-4 p-3 text-center mt-5 mx-auto"
+              data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="650"
             >
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="panelsStayOpen-collapseOne"
-                  >
-                    Accordion Item #1
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseOne"
-                  class="accordion-collapse collapse show"
+              <h6 class="text-white-60">
+                Written by
+                <a
+                  href="#"
+                  class="text-white-100 hover:text-brand-100 transition"
+                  >John Doe</a
                 >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseTwo"
-                  >
-                    Accordion Item #2
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseTwo"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">
-                      Can the first-cut change? Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Eos sit voluptatum molestias
-                      cupiditate harum, facilis minus perferendis rerum, ullam
-                      quam ducimus modi qui suscipit officia nulla odio, alias
-                      placeat assumenda.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#panelsStayOpen-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="panelsStayOpen-collapseThree"
-                  >
-                    Accordion Item #3
-                  </button>
-                </h2>
-                <div
-                  id="panelsStayOpen-collapseThree"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item -->
-          <div class="col-md-12">
-            <h5 class="text-white-100 mb-4">Deposits/Withdrawals</h5>
-            <div class="accordion d-flex flex-column gap-2">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Deposits-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="Deposits-collapseOne"
-                  >
-                    Do I control my risk?
-                  </button>
-                </h2>
-                <div
-                  id="Deposits-collapseOne"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Deposits-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="Deposits-collapseTwo"
-                  >
-                    Do I pay fees on losses?
-                  </button>
-                </h2>
-                <div
-                  id="Deposits-collapseTwo"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">
-                      Can the first-cut change? Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Eos sit voluptatum molestias
-                      cupiditate harum, facilis minus perferendis rerum, ullam
-                      quam ducimus modi qui suscipit officia nulla odio, alias
-                      placeat assumenda.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Deposits-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="Deposits-collapseThree"
-                  >
-                    How do I receive my payout?
-                  </button>
-                </h2>
-                <div
-                  id="Deposits-collapseThree"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- item -->
-          <div class="col-md-12">
-            <h5 class="text-white-100 mb-4">Risk & Limits</h5>
-            <div class="accordion d-flex flex-column gap-2">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Risk-collapseOne"
-                    aria-expanded="true"
-                    aria-controls="Risk-collapseOne"
-                  >
-                    Do I control my risk?
-                  </button>
-                </h2>
-                <div
-                  id="Risk-collapseOne"
-                  class="accordion-collapse collapse show"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Risk-collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="Risk-collapseTwo"
-                  >
-                    Do I pay fees on losses?
-                  </button>
-                </h2>
-                <div id="Risk-collapseTwo" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    <p class="text-white-70">
-                      Can the first-cut change? Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Eos sit voluptatum molestias
-                      cupiditate harum, facilis minus perferendis rerum, ullam
-                      quam ducimus modi qui suscipit officia nulla odio, alias
-                      placeat assumenda.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#Risk-collapseThree"
-                    aria-expanded="false"
-                    aria-controls="Risk-collapseThree"
-                  >
-                    How do I receive my payout?
-                  </button>
-                </h2>
-                <div
-                  id="Risk-collapseThree"
-                  class="accordion-collapse collapse"
-                >
-                  <div class="accordion-body">
-                    <p class="text-white-70">Can the first-cut change?</p>
-                  </div>
-                </div>
-              </div>
+              </h6>
+              <p class="mt-2">Published on 22nd January 2021</p>
+              <ul
+                class="d-flex align-items-center gap-3 publisher-social-menu mt-4 justify-content-center"
+              >
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/icon/link.svg" alt="icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/icon/linkedin.svg" alt="icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/images/icon/twitter-x.svg" alt="icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/images/icon/facebook-circle.svg"
+                      alt="icon"
+                  /></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- End blog page overview -->
+    <!-- Start blog details -->
+    <section class="blog-details-section section-md-mt position-relative">
+      <div class="container">
+        <div class="rowd">
+          <div class="col-md-3">
+            <div class="bg-white-5 py-3 px-2 rounded-3 position-relative">
+              <h6 class="text-center">Table of Content</h6>
+              <div class="toc-box">
+                <div class="heading-list mt-4" id="table-of-contents"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="blog-details-content right-content">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+
+              <p>
+                Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum,
+                nulla odio nisl vitae. In aliquet pellentesque aenean hac
+                vestibulum turpis mi bibendum diam. Tempor integer aliquam in
+                vitae malesuada fringilla.
+              </p>
+              <p>
+                Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum,
+                nulla odio nisl vitae. In aliquet pellentesque aenean hac
+                vestibulum turpis mi bibendum diam. Tempor integer aliquam in
+                vitae malesuada fringilla.
+              </p>
+              <p>
+                Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum,
+                nulla odio nisl vitae. In aliquet pellentesque aenean hac
+                vestibulum turpis mi bibendum diam. Tempor integer aliquam in
+                vitae malesuada fringilla.
+              </p>
+              <p>
+                Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum,
+                nulla odio nisl vitae. In aliquet pellentesque aenean hac
+                vestibulum turpis mi bibendum diam. Tempor integer aliquam in
+                vitae malesuada fringilla.
+              </p>
+              <p>
+                Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum,
+                nulla odio nisl vitae. In aliquet pellentesque aenean hac
+                vestibulum turpis mi bibendum diam. Tempor integer aliquam in
+                vitae malesuada fringilla.
+              </p>
+              <h3>Heading 2</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nostrum vero amet ab! Iure dolorum quibusdam vitae laudantium.
+                Consequatur, eaque tempore sapiente repellat consequuntur veniam
+                voluptates quis. Neque omnis vitae quisquam.
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+                distinctio harum suscipit, architecto eveniet sit iusto dicta
+                autem temporibus excepturi nihil rerum totam atque similique,
+                alias inventore asperiores, cumque reprehenderit?
+              </p>
+              <h2>heading item</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                doloremque eum fuga eligendi omnis consequuntur iusto. In
+                reiciendis, delectus labore numquam ea quae possimus esse quas
+                eveniet eaque eius provident!
+              </p>
+              <h4>Heading 4</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End blog details -->
     <!-- Start Cta -->
     <section class="cta-section text-center section-lg-mt">
       <div class="container">
@@ -651,15 +527,142 @@
       </div>
     </footer>
     <!-- End Footer -->
+
     <!-- bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const contentArea = document.querySelector(".right-content");
+        const tocContainer = document.getElementById("table-of-contents");
+        const h2Headings = contentArea.querySelectorAll("h2");
+
+        // যদি কোনো H2 না থাকে, তাহলে TOC দেখানোর দরকার নেই
+        if (h2Headings.length === 0) {
+          tocContainer.innerHTML =
+            "<p>No headings available for Table of Contents.</p>";
+          return;
+        }
+
+        const tocList = document.createElement("ul");
+
+        // ==============================================
+        // ১. TOC তৈরি ও Smooth Scroll সেটআপ
+        // ==============================================
+
+        h2Headings.forEach((heading) => {
+          // ID না থাকলে ডায়নামিকভাবে তৈরি করা
+          const id =
+            heading.getAttribute("id") ||
+            "section-" + Math.random().toString(36).substr(2, 9);
+          heading.setAttribute("id", id);
+
+          const listItem = document.createElement("li");
+          const link = document.createElement("a");
+
+          link.href = "#" + id;
+          link.textContent = heading.textContent;
+          link.classList.add("toc-link");
+
+          // TOC-তে ক্লিক ইভেন্ট হ্যান্ডলিং: ক্লিক করলে তৎক্ষণাৎ active ক্লাস যুক্ত করা
+          link.addEventListener("click", function (e) {
+            // e.preventDefault(); // CSS scroll-behavior: smooth থাকায় এটি দরকার নেই
+
+            // ক্লিক করার সঙ্গে সঙ্গেই সব active ক্লাস সরিয়ে দেওয়া
+            document
+              .querySelectorAll(".toc-link")
+              .forEach((l) => l.classList.remove("active"));
+            // ক্লিক করা লিঙ্কটি active করা
+            this.classList.add("active");
+
+            // Note: যখন স্ক্রল শেষ হবে, Intersection Observer নিজে থেকেই active ক্লাসটি আবার হ্যান্ডেল করবে।
+          });
+
+          listItem.appendChild(link);
+          tocList.appendChild(listItem);
+        });
+
+        tocContainer.appendChild(tocList);
+
+        const tocLinks = document.querySelectorAll(".toc-link");
+
+        // ==============================================
+        // ২. Intersection Observer সেটআপ
+        // ==============================================
+
+        // Intersection Observer Options
+        // rootMargin: '0px 0px -60% 0px' মানে - যখন কোনো হেডিং ভিউপোর্টের উপরের 40% (100% - 60%) এরিয়া ক্রস করবে, তখন টার্গেট হবে।
+        const observerOptions = {
+          root: null, // ভিউপোর্টই রুট
+          rootMargin: "0px 0px -60% 0px",
+          threshold: 0, // সামান্য অংশও ক্রস করলে ট্রিগার হবে
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          let activeFound = false; // একাধিক হেডিং একসাথে intersecting হতে পারে, তাই প্রথমটি ট্র্যাক করার জন্য
+
+          // উল্টো দিক থেকে লুপ করা - এটি নিশ্চিত করে যে সবচেয়ে উঁচু হেডিংটি আগে অ্যাকটিভ হবে
+          for (let i = entries.length - 1; i >= 0; i--) {
+            const entry = entries[i];
+
+            if (entry.isIntersecting) {
+              const currentId = entry.target.id;
+
+              // যদি কোনো ক্লিক ইভেন্ট active না থাকে, তবেই Observer কাজ করবে
+              if (!document.querySelector(".toc-link.active")) {
+                // সমস্ত লিঙ্ক থেকে active ক্লাস সরিয়ে দেওয়া
+                tocLinks.forEach((link) => link.classList.remove("active"));
+
+                // নতুন active লিঙ্ক সেট করা
+                const activeLink = document.querySelector(
+                  `.toc-link[href="#${currentId}"]`
+                );
+                if (activeLink) {
+                  activeLink.classList.add("active");
+                }
+              }
+
+              activeFound = true;
+              break;
+            }
+          }
+
+          // যদি কোনো সেকশনই intersecting না হয় (যেমন একদম পেজের উপরে), প্রথম লিঙ্কটি active করা
+          if (!activeFound && tocLinks.length > 0) {
+            tocLinks.forEach((link) => link.classList.remove("active"));
+            if (window.scrollY < h2Headings[0].offsetTop) {
+              tocLinks[0].classList.add("active");
+            }
+          }
+        }, observerOptions);
+
+        // সব H2 হেডিংকে মনিটর করা
+        h2Headings.forEach((heading) => {
+          observer.observe(heading);
+        });
+      });
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- aos animation -->
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: true,
+        easing: "ease-in-out",
+        offset: 120,
+      });
+    </script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <!-- color piker js -->
     <script src="assets/js/color-picker.js"></script>
+
     <!-- star create  -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
@@ -718,6 +721,20 @@
             container.appendChild(star);
           }
         });
+      });
+    </script>
+
+    <!-- scrolling header js -->
+    <script>
+      // scroll event listener
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header-area");
+
+        if (window.scrollY > 200) {
+          header.classList.add("scrolled"); // new class add
+        } else {
+          header.classList.remove("scrolled"); // remove when back
+        }
       });
     </script>
 

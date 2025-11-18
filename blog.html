@@ -239,7 +239,7 @@
 
     <!-- End Header -->
     <!-- Start page overview -->
-    <section class="page-overview-section section-md-mt">
+    <section class="page-overview-section section-md-mt position-relative">
       <div class="container">
         <div class="row">
           <div class="col-md-7 text-md-start text-center">
@@ -261,7 +261,7 @@
     </section>
     <!-- End page overview -->
     <!-- Start blog section -->
-    <section class="blog-section section-lg-pt section-md-mt bg-black-80">
+    <section class="blog-section section-lg-mt">
       <div class="container">
         <div class="row gy-5 justify-content-center">
           <div class="col-md-8 text-center">
@@ -270,40 +270,42 @@
           </div>
           <div class="col-md-12">
             <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20">
-              <div class="row gy-4 align-items-center gx-5">
-                <div class="col-md-6">
-                  <div class="blog-thumbnails">
-                    <img
-                      src="assets/images/blog/blog-1.png"
-                      alt="img"
-                      class="w-100 rounded-3"
-                    />
+              <a href="blog-details.html">
+                <div class="row gy-4 align-items-center gx-5">
+                  <div class="col-md-6">
+                    <div class="blog-thumbnails">
+                      <img
+                        src="assets/images/blog/blog-1.png"
+                        alt="img"
+                        class="w-100 rounded-3"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="d-flex align-items-center gap-3">
+                      <li>
+                        <span
+                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                          >Transparency</span
+                        >
+                      </li>
+                      <li><span class="text-white-75">March 15, 2025</span></li>
+                      <li><span class="text-white-75">5 min read</span></li>
+                    </ul>
+                    <div class="mt-4">
+                      <h6>
+                        The Future of Financial Transparency: Building Trust
+                        Through Data
+                      </h6>
+                      <p class="mt-2">
+                        Exploring how modern technology and open data practices
+                        are reshaping the financial industry's approach to
+                        transparency and accountability.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <ul class="d-flex align-items-center gap-3">
-                    <li>
-                      <span
-                        class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                        >Transparency</span
-                      >
-                    </li>
-                    <li><span class="text-white-75">March 15, 2025</span></li>
-                    <li><span class="text-white-75">5 min read</span></li>
-                  </ul>
-                  <div class="mt-4">
-                    <h6>
-                      The Future of Financial Transparency: Building Trust
-                      Through Data
-                    </h6>
-                    <p class="mt-2">
-                      Exploring how modern technology and open data practices
-                      are reshaping the financial industry's approach to
-                      transparency and accountability.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
           <div class="col-md-12">
@@ -320,206 +322,226 @@
           <!-- Masonry Grid -->
           <div class="col-md-12">
             <div class="row gy-4 blog-masonry">
-              <!-- Card 1 (Risk) -->
               <div class="col-lg-4 col-md-6 blog-item risk">
-                <div
-                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
-                >
-                  <div class="blog-thumbnails">
-                    <img
-                      src="assets/images/blog/blog-1.png"
-                      class="w-100 rounded-3"
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mt-4">
-                    <ul class="d-flex align-items-center gap-3">
-                      <li>
-                        <span
-                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                          >Risk</span
-                        >
-                      </li>
-                      <li><span class="text-white-75">March 15, 2025</span></li>
-                      <li><span class="text-white-75">5 min read</span></li>
-                    </ul>
+                <a href="blog-details.html">
+                  <div
+                    class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                  >
+                    <div class="blog-thumbnails">
+                      <img
+                        src="assets/images/blog/blog-1.png"
+                        class="w-100 rounded-3"
+                        alt="img"
+                      />
+                    </div>
                     <div class="mt-4">
-                      <h6>Risk Management in Modern Portfolio Theory</h6>
-                      <p class="mt-2 sm-p">
-                        A comprehensive guide to understanding and implementing
-                        effective risk.
-                      </p>
+                      <ul class="d-flex align-items-center gap-3">
+                        <li>
+                          <span
+                            class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                            >Risk</span
+                          >
+                        </li>
+                        <li>
+                          <span class="text-white-75">March 15, 2025</span>
+                        </li>
+                        <li><span class="text-white-75">5 min read</span></li>
+                      </ul>
+                      <div class="mt-4">
+                        <h6>Risk Management in Modern Portfolio Theory</h6>
+                        <p class="mt-2 sm-p">
+                          A comprehensive guide to understanding and
+                          implementing effective risk.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
 
-              <!-- Card 2 (Transparency) -->
               <div class="col-lg-4 col-md-6 blog-item transparency">
-                <div
-                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
-                >
-                  <div class="blog-thumbnails">
-                    <img
-                      src="assets/images/blog/blog-2.png"
-                      class="w-100 rounded-3"
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mt-4">
-                    <ul class="d-flex align-items-center gap-3">
-                      <li>
-                        <span
-                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                          >Transparency</span
-                        >
-                      </li>
-                      <li><span class="text-white-75">March 15, 2025</span></li>
-                      <li><span class="text-white-75">5 min read</span></li>
-                    </ul>
-                    <div class="mt-4">
-                      <h6>Performance Metrics That Actually Matter</h6>
-                      <p class="mt-2 sm-p">
-                        Beyond simple returns:How to create investment
-                        approaches that prioritize clarity.
-                      </p>
+                <a href="blog-details.html"
+                  ><div
+                    class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                  >
+                    <div class="blog-thumbnails">
+                      <img
+                        src="assets/images/blog/blog-2.png"
+                        class="w-100 rounded-3"
+                        alt="img"
+                      />
                     </div>
-                  </div>
-                </div>
+                    <div class="mt-4">
+                      <ul class="d-flex align-items-center gap-3">
+                        <li>
+                          <span
+                            class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                            >Transparency</span
+                          >
+                        </li>
+                        <li>
+                          <span class="text-white-75">March 15, 2025</span>
+                        </li>
+                        <li><span class="text-white-75">5 min read</span></li>
+                      </ul>
+                      <div class="mt-4">
+                        <h6>Performance Metrics That Actually Matter</h6>
+                        <p class="mt-2 sm-p">
+                          Beyond simple returns:How to create investment
+                          approaches that prioritize clarity.
+                        </p>
+                      </div>
+                    </div>
+                  </div></a
+                >
               </div>
 
-              <!-- Card 3 (Transparency) -->
               <div class="col-lg-4 col-md-6 blog-item transparency">
-                <div
-                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
-                >
-                  <div class="blog-thumbnails">
-                    <img
-                      src="assets/images/blog/blog-2.png"
-                      class="w-100 rounded-3"
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mt-4">
-                    <ul class="d-flex align-items-center gap-3">
-                      <li>
-                        <span
-                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                          >Transparency</span
-                        >
-                      </li>
-                      <li><span class="text-white-75">March 15, 2025</span></li>
-                      <li><span class="text-white-75">5 min read</span></li>
-                    </ul>
+                <a href="blog-details.html">
+                  <div
+                    class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                  >
+                    <div class="blog-thumbnails">
+                      <img
+                        src="assets/images/blog/blog-2.png"
+                        class="w-100 rounded-3"
+                        alt="img"
+                      />
+                    </div>
                     <div class="mt-4">
-                      <h6>Performance Metrics That Actually Matter</h6>
-                      <p class="mt-2 sm-p">
-                        Beyond simple returns:How to create investment
-                        approaches that prioritize clarity.
-                      </p>
+                      <ul class="d-flex align-items-center gap-3">
+                        <li>
+                          <span
+                            class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                            >Transparency</span
+                          >
+                        </li>
+                        <li>
+                          <span class="text-white-75">March 15, 2025</span>
+                        </li>
+                        <li><span class="text-white-75">5 min read</span></li>
+                      </ul>
+                      <div class="mt-4">
+                        <h6>Performance Metrics That Actually Matter</h6>
+                        <p class="mt-2 sm-p">
+                          Beyond simple returns:How to create investment
+                          approaches that prioritize clarity.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
 
-              <!-- Card 4 (Performance) -->
               <div class="col-lg-4 col-md-6 blog-item performance">
-                <div
-                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
-                >
-                  <div class="blog-thumbnails">
-                    <img
-                      src="assets/images/blog/blog-3.png"
-                      class="w-100 rounded-3"
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mt-4">
-                    <ul class="d-flex align-items-center gap-3">
-                      <li>
-                        <span
-                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                          >Performance</span
-                        >
-                      </li>
-                      <li><span class="text-white-75">March 15, 2025</span></li>
-                      <li><span class="text-white-75">5 min read</span></li>
-                    </ul>
+                <a href="blog-details.html">
+                  <div
+                    class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                  >
+                    <div class="blog-thumbnails">
+                      <img
+                        src="assets/images/blog/blog-3.png"
+                        class="w-100 rounded-3"
+                        alt="img"
+                      />
+                    </div>
                     <div class="mt-4">
-                      <h6>Building Transparent Investment Strategies</h6>
-                      <p class="mt-2 sm-p">
-                        How to create investment approaches that prioritize
-                        clarity and openness with stakeholders.
-                      </p>
+                      <ul class="d-flex align-items-center gap-3">
+                        <li>
+                          <span
+                            class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                            >Performance</span
+                          >
+                        </li>
+                        <li>
+                          <span class="text-white-75">March 15, 2025</span>
+                        </li>
+                        <li><span class="text-white-75">5 min read</span></li>
+                      </ul>
+                      <div class="mt-4">
+                        <h6>Building Transparent Investment Strategies</h6>
+                        <p class="mt-2 sm-p">
+                          How to create investment approaches that prioritize
+                          clarity and openness with stakeholders.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
-              <!-- Card 4 (Performance) -->
+
               <div class="col-lg-4 col-md-6 blog-item risk">
-                <div
-                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
-                >
-                  <div class="blog-thumbnails">
-                    <img
-                      src="assets/images/blog/blog-6.png"
-                      class="w-100 rounded-3"
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mt-4">
-                    <ul class="d-flex align-items-center gap-3">
-                      <li>
-                        <span
-                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                          >Performance</span
-                        >
-                      </li>
-                      <li><span class="text-white-75">March 15, 2025</span></li>
-                      <li><span class="text-white-75">5 min read</span></li>
-                    </ul>
+                <a href="blog-details.html">
+                  <div
+                    class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                  >
+                    <div class="blog-thumbnails">
+                      <img
+                        src="assets/images/blog/blog-6.png"
+                        class="w-100 rounded-3"
+                        alt="img"
+                      />
+                    </div>
                     <div class="mt-4">
-                      <h6>Building Transparent Investment Strategies</h6>
-                      <p class="mt-2 sm-p">
-                        How to create investment approaches that prioritize
-                        clarity and openness with stakeholders.
-                      </p>
+                      <ul class="d-flex align-items-center gap-3">
+                        <li>
+                          <span
+                            class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                            >Performance</span
+                          >
+                        </li>
+                        <li>
+                          <span class="text-white-75">March 15, 2025</span>
+                        </li>
+                        <li><span class="text-white-75">5 min read</span></li>
+                      </ul>
+                      <div class="mt-4">
+                        <h6>Building Transparent Investment Strategies</h6>
+                        <p class="mt-2 sm-p">
+                          How to create investment approaches that prioritize
+                          clarity and openness with stakeholders.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
-              <!-- Card 4 (Performance) -->
+
               <div class="col-lg-4 col-md-6 blog-item performance">
-                <div
-                  class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
-                >
-                  <div class="blog-thumbnails">
-                    <img
-                      src="assets/images/blog/blog-5.png"
-                      class="w-100 rounded-3"
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mt-4">
-                    <ul class="d-flex align-items-center gap-3">
-                      <li>
-                        <span
-                          class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                          >Performance</span
-                        >
-                      </li>
-                      <li><span class="text-white-75">March 15, 2025</span></li>
-                      <li><span class="text-white-75">5 min read</span></li>
-                    </ul>
+                <a href="blog-details.html">
+                  <div
+                    class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100"
+                  >
+                    <div class="blog-thumbnails">
+                      <img
+                        src="assets/images/blog/blog-5.png"
+                        class="w-100 rounded-3"
+                        alt="img"
+                      />
+                    </div>
                     <div class="mt-4">
-                      <h6>Building Transparent Investment Strategies</h6>
-                      <p class="mt-2 sm-p">
-                        How to create investment approaches that prioritize
-                        clarity and openness with stakeholders.
-                      </p>
+                      <ul class="d-flex align-items-center gap-3">
+                        <li>
+                          <span
+                            class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                            >Performance</span
+                          >
+                        </li>
+                        <li>
+                          <span class="text-white-75">March 15, 2025</span>
+                        </li>
+                        <li><span class="text-white-75">5 min read</span></li>
+                      </ul>
+                      <div class="mt-4">
+                        <h6>Building Transparent Investment Strategies</h6>
+                        <p class="mt-2 sm-p">
+                          How to create investment approaches that prioritize
+                          clarity and openness with stakeholders.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -548,94 +570,100 @@
         </div>
         <div class="row gy-4 mt-5">
           <div class="col-lg-4 col-md-6">
-            <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
-              <div class="blog-thumbnails">
-                <img
-                  src="assets/images/blog/blog-6.png"
-                  class="w-100 rounded-3"
-                  alt="img"
-                />
-              </div>
-              <div class="mt-4">
-                <ul class="d-flex align-items-center gap-3">
-                  <li>
-                    <span
-                      class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                      >Transparency</span
-                    >
-                  </li>
-                  <li><span class="text-white-75">March 15, 2025</span></li>
-                  <li><span class="text-white-75">5 min read</span></li>
-                </ul>
+            <a href="blog-details.html">
+              <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
+                <div class="blog-thumbnails">
+                  <img
+                    src="assets/images/blog/blog-6.png"
+                    class="w-100 rounded-3"
+                    alt="img"
+                  />
+                </div>
                 <div class="mt-4">
-                  <h6>Performance Metrics That Actually Matter</h6>
-                  <p class="mt-2 sm-p">
-                    Beyond simple returns:How to create investment approaches
-                    that prioritize clarity.
-                  </p>
+                  <ul class="d-flex align-items-center gap-3">
+                    <li>
+                      <span
+                        class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                        >Transparency</span
+                      >
+                    </li>
+                    <li><span class="text-white-75">March 15, 2025</span></li>
+                    <li><span class="text-white-75">5 min read</span></li>
+                  </ul>
+                  <div class="mt-4">
+                    <h6>Performance Metrics That Actually Matter</h6>
+                    <p class="mt-2 sm-p">
+                      Beyond simple returns:How to create investment approaches
+                      that prioritize clarity.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
-              <div class="blog-thumbnails">
-                <img
-                  src="assets/images/blog/blog-4.png"
-                  class="w-100 rounded-3"
-                  alt="img"
-                />
-              </div>
-              <div class="mt-4">
-                <ul class="d-flex align-items-center gap-3">
-                  <li>
-                    <span
-                      class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                      >Transparency</span
-                    >
-                  </li>
-                  <li><span class="text-white-75">March 15, 2025</span></li>
-                  <li><span class="text-white-75">5 min read</span></li>
-                </ul>
+            <a href="blog-details.html">
+              <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
+                <div class="blog-thumbnails">
+                  <img
+                    src="assets/images/blog/blog-4.png"
+                    class="w-100 rounded-3"
+                    alt="img"
+                  />
+                </div>
                 <div class="mt-4">
-                  <h6>Performance Metrics That Actually Matter</h6>
-                  <p class="mt-2 sm-p">
-                    Beyond simple returns:How to create investment approaches
-                    that prioritize clarity.
-                  </p>
+                  <ul class="d-flex align-items-center gap-3">
+                    <li>
+                      <span
+                        class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                        >Transparency</span
+                      >
+                    </li>
+                    <li><span class="text-white-75">March 15, 2025</span></li>
+                    <li><span class="text-white-75">5 min read</span></li>
+                  </ul>
+                  <div class="mt-4">
+                    <h6>Performance Metrics That Actually Matter</h6>
+                    <p class="mt-2 sm-p">
+                      Beyond simple returns:How to create investment approaches
+                      that prioritize clarity.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
-              <div class="blog-thumbnails">
-                <img
-                  src="assets/images/blog/blog-5.png"
-                  class="w-100 rounded-3"
-                  alt="img"
-                />
-              </div>
-              <div class="mt-4">
-                <ul class="d-flex align-items-center gap-3">
-                  <li>
-                    <span
-                      class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
-                      >Transparency</span
-                    >
-                  </li>
-                  <li><span class="text-white-75">March 15, 2025</span></li>
-                  <li><span class="text-white-75">5 min read</span></li>
-                </ul>
+            <a href="blog-details.html">
+              <div class="border-1 p-3 rounded-3 bg-white-5 bg-filter-20 h-100">
+                <div class="blog-thumbnails">
+                  <img
+                    src="assets/images/blog/blog-5.png"
+                    class="w-100 rounded-3"
+                    alt="img"
+                  />
+                </div>
                 <div class="mt-4">
-                  <h6>Performance Metrics That Actually Matter</h6>
-                  <p class="mt-2 sm-p">
-                    Beyond simple returns:How to create investment approaches
-                    that prioritize clarity.
-                  </p>
+                  <ul class="d-flex align-items-center gap-3">
+                    <li>
+                      <span
+                        class="d-flex rounded-4 bg-brand-20 text-white-100 px-3 py-1"
+                        >Transparency</span
+                      >
+                    </li>
+                    <li><span class="text-white-75">March 15, 2025</span></li>
+                    <li><span class="text-white-75">5 min read</span></li>
+                  </ul>
+                  <div class="mt-4">
+                    <h6>Performance Metrics That Actually Matter</h6>
+                    <p class="mt-2 sm-p">
+                      Beyond simple returns:How to create investment approaches
+                      that prioritize clarity.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

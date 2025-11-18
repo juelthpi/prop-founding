@@ -1,3 +1,16 @@
+.header-shape {
+  top: -290px;
+  right: 28%;
+}
+.header-shape-2-container {
+  position: absolute;
+  top: -112px;
+  right: 24%;
+}
+.header-shape-container:after {
+  right: 10%;
+  top: -397px;
+}
 .authentication-card {
   max-width: 560px;
   width: 95%;
@@ -8,9 +21,17 @@
   padding: 40px;
 }
 
+@media all and (max-width: 991px) {
+  .header-shape-container:after {
+    right: -10%;
+  }
+}
 @media all and (max-width: 767px) {
   .authentication-card {
     padding-left: 18px;
     padding-right: 18px;
+  }
+  .header-shape-container:after {
+    right: -40%;
   }
 }

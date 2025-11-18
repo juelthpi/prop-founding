@@ -170,25 +170,6 @@
         });
       });
     </script>
-    <script>
-      document.querySelectorAll(".toggle-password").forEach((button) => {
-        button.addEventListener("click", () => {
-          const input = button.previousElementSibling;
-          const eye = button.querySelector(".icon-eye");
-          const eyeSlash = button.querySelector(".icon-eye-slash");
-
-          if (input.type === "password") {
-            input.type = "text";
-            eye.style.display = "none";
-            eyeSlash.style.display = "inline";
-          } else {
-            input.type = "password";
-            eye.style.display = "inline";
-            eyeSlash.style.display = "none";
-          }
-        });
-      });
-    </script>
 
     <script src="assets/js/global.js"></script>
   </body>

@@ -2,7 +2,6 @@
   --font-main: "Roboto", sans-serif;
   --font-secondary: "Poppins", sans-serif;
   --brand: #22c55e;
-  /* --brand: #27a1da; */
   --brand-secondary: #86ffb2;
   --white: #ffffff;
   --black: #020617;
@@ -33,7 +32,7 @@ body {
   );
   background-size: 200px 100%;
   animation: moveLine 4s linear infinite;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 .has-aos {
   overflow-x: hidden !important;
@@ -81,7 +80,6 @@ h6 {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   transition: 0.5s;
-  /* z-index: -1; */
 }
 
 .gradient-border:hover::before {
@@ -163,16 +161,17 @@ h3 {
 h4 {
   font-size: calc(var(--font-base) + 16px);
   line-height: 36px;
+  font-weight: 500;
 }
 h5 {
   font-size: calc(var(--font-base) + 10px);
 
   line-height: 42px;
-  font-weight: 600;
+  font-weight: 500;
 }
 h6 {
   font-size: calc(var(--font-base) + 4px);
-  font-weight: 600;
+  font-weight: 500;
   line-height: 28px;
 }
 .primary-btn {
@@ -604,6 +603,90 @@ h6 {
     transform: translateY(18px);
   }
 }
+/* Overlay blur background */
+.cookie-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1079;
+  transition: all 0.6s ease;
+}
+
+/* Show overlay */
+.cookie-overlay.show {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(6px);
+}
+
+/* Hide overlay */
+.cookie-overlay.hide {
+  opacity: 0;
+  visibility: hidden;
+  backdrop-filter: blur(0px);
+}
+
+/* Cookie banner box */
+.cookie-banner {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  transform: translate(-50%, 20px);
+  width: 95%;
+  max-width: 580px;
+  background: var(--white-5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 12px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1080;
+  transition: all 0.6s ease;
+  backdrop-filter: blur(30px);
+}
+
+/* Show animation */
+.cookie-banner.show {
+  transform: translate(0%, 20px);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hide animation */
+.cookie-banner.hide {
+  transform: translate(-50%, 100px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Blur body when active */
+body.blurred {
+  overflow: hidden;
+}
+
+/* Button animation */
+.cookie-banner button {
+  transition: all 0.3s ease;
+}
+
+.cookie-icon {
+  height: 55px;
+  max-width: 55px;
+  min-width: 55px;
+  border-radius: 50%;
+  background: var(--black-80);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+.cookie-icon img {
+  max-width: 40px;
+  width: 100%;
+}
 
 @media all and (max-width: 1550px) {
   .header-after-shape:after {
@@ -720,7 +803,7 @@ h6 {
 }
 @media all and (max-width: 557px) {
   h1 {
-    font-size: calc(var(--font-base) + 10px);
+    font-size: calc(var(--font-base) + 14px);
 
     line-height: 34px;
   }
@@ -734,7 +817,7 @@ h6 {
     line-height: 30px;
   }
   h5 {
-    font-size: calc(var(--font-base) - 3px);
+    font-size: calc(var(--font-base) + 3px);
     line-height: 30px;
   }
   .section-lg-mt {
@@ -749,87 +832,3 @@ h6 {
   }
 }
 /* End Header  */
-/* Overlay blur background */
-.cookie-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(0px);
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1079;
-  transition: all 0.6s ease;
-}
-
-/* Show overlay */
-.cookie-overlay.show {
-  opacity: 1;
-  visibility: visible;
-  backdrop-filter: blur(6px);
-}
-
-/* Hide overlay */
-.cookie-overlay.hide {
-  opacity: 0;
-  visibility: hidden;
-  backdrop-filter: blur(0px);
-}
-
-/* Cookie banner box */
-.cookie-banner {
-  position: fixed;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, 100px);
-  width: 95%;
-  max-width: 580px;
-  background: var(--white-5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border-radius: 12px;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1080;
-  transition: all 0.6s ease;
-  backdrop-filter: blur(30px);
-}
-
-/* Show animation */
-.cookie-banner.show {
-  transform: translate(-50%, 0);
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Hide animation */
-.cookie-banner.hide {
-  transform: translate(-50%, 100px);
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Blur body when active */
-body.blurred {
-  overflow: hidden;
-}
-
-/* Button animation */
-.cookie-banner button {
-  transition: all 0.3s ease;
-}
-
-.cookie-icon {
-  height: 55px;
-  max-width: 55px;
-  min-width: 55px;
-  border-radius: 50%;
-  background: var(--black-80);
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  align-items: center;
-}
-.cookie-icon img {
-  max-width: 40px;
-  width: 100%;
-}
