@@ -1,0 +1,34 @@
+.platform-stats-icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s;
+}
+.platform-stats-icon img {
+  max-width: 40px;
+  width: auto;
+}
+.platform-stats-item:hover {
+  background: linear-gradient(45deg, var(--brand-5), var(--brand-10));
+}
+.platform-stats-item:hover .platform-stats-icon {
+  transform: translateY(-10px);
+}
+.platform-stats-circle-shape.circle-shape-right:after {
+  top: -80px;
+}
+@media all and (max-width: 991px) {
+  .platform-stats-icon {
+    height: 60px;
+    width: 60px;
+  }
+  .platform-stats-icon img {
+    max-width: 28px;
+    width: auto;
+  }
+}

@@ -1,0 +1,44 @@
+.table tr td {
+  backdrop-filter: blur(54px);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.02)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.06) 100%
+    );
+  color: var(--white-80);
+  font-size: var(--base-font);
+  font-weight: 500;
+  padding: 18px 18px;
+  transition: 0.5s;
+  border: none;
+}
+.table tr td:hover {
+  background-color: var(--brand-15);
+}
+.table tr th {
+  background: var(--brand-15);
+  backdrop-filter: blur(50px);
+  border: none;
+  color: var(--white-80);
+  font-size: var(--base-font);
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 18px 18px;
+}
+.table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+.table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+.table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}

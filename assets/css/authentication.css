@@ -20,7 +20,17 @@
   border-radius: 10px;
   padding: 40px;
 }
-
+.talk-item .talk-item-icon img {
+  max-width: 22px;
+}
+.contact-circle-shape-right {
+  top: 260px !important;
+}
+.contact-circle-center:after {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
 @media all and (max-width: 991px) {
   .header-shape-container:after {
     right: -10%;

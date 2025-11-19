@@ -148,6 +148,10 @@
 .profit-sharing-card:hover .step-number {
   color: var(--white-100);
 }
+.trading-journey-shape.circle-shape-left:after {
+  top: -200px;
+}
+
 @media all and (max-width: 991px) {
   .profit-sharing-card-icon img {
     max-width: 120px;

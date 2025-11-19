@@ -58,8 +58,8 @@
   border-color: var(--brand-20);
 }
 .work-step-icon {
-  height: 100px;
-  width: 100px;
+  height: 85px;
+  width: 85px;
   border-radius: 50%;
   position: relative;
   z-index: 2;
@@ -70,16 +70,16 @@
   content: "";
   position: absolute;
   left: 5px;
-  top: 45px;
+  top: 40px;
   height: 90px;
   width: 90px;
-  background: var(--brand-80);
+  background: var(--brand-100);
   filter: blur(40px);
   opacity: 0.5;
   z-index: -1;
 }
 .work-step-icon img {
-  max-width: 40px;
+  max-width: 35px;
   width: 100%;
   z-index: 3;
   position: relative;

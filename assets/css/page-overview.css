@@ -1,0 +1,15 @@
+.header-shape-container {
+  overflow-x: clip;
+  z-index: -2;
+  top: -80px;
+  right: -40px;
+}
+.header-shape {
+  height: 650px;
+  right: 136px;
+}
+@media all and (max-width: 767px) {
+  .header-shape-container {
+    right: 0px;
+  }
+}

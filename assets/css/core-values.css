@@ -17,16 +17,15 @@
   background: linear-gradient(
     117.1deg,
     var(--brand-5) 35.08%,
-    var(--brand-secondary-5) 105.57%
+    var(--brand-secondary-15) 105.57%
   );
   box-shadow: 0px 0px 114.96px 0px var(--black-10);
-
   backdrop-filter: blur(200px);
   overflow: hidden;
   position: relative;
 }
 
-.row > .col-lg-4:nth-child(even) .gradient-border::before {
+/* .row > .col-lg-4:nth-child(even) .gradient-border::before {
   background: linear-gradient(
     -28.5deg,
     var(--yellow-60) -12.56%,
@@ -35,20 +34,101 @@
 }
 .row > .col-lg-4:nth-child(even) .core-values-card:after {
   background-color: var(--yellow-5);
-}
+} */
+
 .core-values-card:after {
   content: "";
   position: absolute;
-  left: 100%;
-  top: 100%;
+
   height: 100%;
   width: 100%;
-  background-color: var(--brand-secondary-5);
   z-index: -2;
   transition: 0.4s;
   border-radius: 12px;
 }
-.core-values-card:hover::after {
+.row > .col-lg-4:nth-child(odd) .core-values-card:after {
+  left: 100%;
+  top: 100%;
+}
+.row > .col-lg-4:nth-child(even) .core-values-card:after {
+  right: 100%;
+  bottom: 100%;
+}
+.row > .col-lg-4:nth-child(odd) .core-values-card:hover::after {
   left: 0;
   top: 0;
+}
+.row > .col-lg-4:nth-child(even) .core-values-card:hover::after {
+  right: 0%;
+  bottom: 0%;
+}
+.row > .col-lg-4:nth-child(5n + 1) .core-values-card:after {
+  background: linear-gradient(
+    147.64deg,
+    var(--warning-5) 19.39%,
+    var(--warning-25) 101.09%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 1) .gradient-border::before {
+  background: linear-gradient(
+    134.5deg,
+    var(--warning-80) -12.56%,
+    var(--white-10) 41.56%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 2) .core-values-card:after {
+  background: linear-gradient(
+    147.64deg,
+    var(--brand-5) 19.39%,
+    var(--brand-25) 101.09%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 2) .gradient-border::before {
+  background: linear-gradient(
+    310.22deg,
+    var(--brand-100) -23.51%,
+    var(--brand-10) 38.68%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 3) .core-values-card:after {
+  background: linear-gradient(
+    147.64deg,
+    var(--yellow-5) 19.39%,
+    var(--yellow-25) 101.09%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 3) .gradient-border::before {
+  background: linear-gradient(
+    134.5deg,
+    var(--yellow-80) -12.56%,
+    var(--yellow-10) 41.56%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 4) .core-values-card:after {
+  background: linear-gradient(
+    147.64deg,
+    var(--indigo-5) 19.39%,
+    var(--indigo-25) 101.09%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 4) .gradient-border::before {
+  background: linear-gradient(
+    310.22deg,
+    var(--indigo-100) -23.51%,
+    var(--indigo-10) 38.68%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 5) .core-values-card:after {
+  background: linear-gradient(
+    147.64deg,
+    var(--neon-5) 19.39%,
+    var(--neon-25) 101.09%
+  );
+}
+.row > .col-lg-4:nth-child(5n + 5) .gradient-border::before {
+  background: linear-gradient(
+    310.22deg,
+    var(--neon-100) -23.51%,
+    var(--neon-10) 38.68%
+  );
 }
