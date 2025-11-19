@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --font-main: "Roboto", sans-serif;
   --font-secondary: "Poppins", sans-serif;
   --brand: #22c55e;
@@ -12,6 +12,23 @@
   --orange: #ff4c00;
   --indigo: #537ad6;
   --purple: #9900ff;
+  --font-base: 16px;
+  --section-gap-base: 120px;
+} */
+:root {
+  --font-main: "Roboto", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+  --brand: #8e1d8a;
+  --brand-secondary: #86ffb2;
+  --white: #ffffff;
+  --black: #020617;
+  --blue: #0084ff;
+  --warning: #106d51;
+  --yellow: #1a0f7d;
+  --neon: #95ff00;
+  --orange: #ff4c00;
+  --indigo: #537ad6;
+  --purple: #1b6ad1;
   --font-base: 16px;
   --section-gap-base: 120px;
 }
