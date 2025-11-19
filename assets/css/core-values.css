@@ -25,17 +25,6 @@
   position: relative;
 }
 
-/* .row > .col-lg-4:nth-child(even) .gradient-border::before {
-  background: linear-gradient(
-    -28.5deg,
-    var(--yellow-60) -12.56%,
-    var(--white-10) 41.56%
-  );
-}
-.row > .col-lg-4:nth-child(even) .core-values-card:after {
-  background-color: var(--yellow-5);
-} */
-
 .core-values-card:after {
   content: "";
   position: absolute;
