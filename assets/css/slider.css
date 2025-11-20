@@ -9,7 +9,6 @@
   align-items: center;
   transition: transform 0.4s, opacity 0.4s;
 }
-
 .partnership-slider .swiper-slide img {
   transition: transform 0.4s, filter 0.4s;
   opacity: 0.6;
