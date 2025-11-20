@@ -144,7 +144,7 @@
                       width="20"
                       height="20"
                       fill="none"
-                      stroke="currentColor"
+                      stroke="gray"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -200,7 +200,7 @@
                       width="20"
                       height="20"
                       fill="none"
-                      stroke="currentColor"
+                      stroke="gray"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -289,7 +289,66 @@
         });
       });
     </script>
+    <!-- star create js -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Utility: get attribute with fallback
+        const getAttr = (el, name, fallback) => {
+          const val = el.getAttribute(name);
+          return val !== null ? val : fallback;
+        };
 
+        // Speed multipliers
+        const speedMap = { slow: 2.5, normal: 1, fast: 0.7 };
+
+        // Loop through all stars containers
+        document.querySelectorAll(".stars").forEach((container) => {
+          const numStars = parseInt(getAttr(container, "star", 200));
+          const speedAttr = getAttr(container, "speed", "normal");
+          const area = getAttr(container, "area", "full");
+          const wPercent = parseFloat(getAttr(container, "width", 100));
+          const hPercent = parseFloat(getAttr(container, "height", 100));
+
+          const speedMultiplier = speedMap[speedAttr] || 1;
+
+          // Determine container position
+          let top = area.includes("bottom") ? 100 - hPercent : 0;
+          let left = area.includes("right") ? 100 - wPercent : 0;
+
+          Object.assign(container.style, {
+            position: "absolute",
+            top: top + "%",
+            left: left + "%",
+            width: wPercent + "%",
+            height: hPercent + "%",
+            overflow: "hidden",
+          });
+
+          // Create stars
+          for (let i = 0; i < numStars; i++) {
+            const star = document.createElement("div");
+            star.classList.add("star");
+
+            const size = Math.random() * 2 + 1;
+            const topPos = Math.random() * 100;
+            const leftPos = Math.random() * 100;
+            const duration = (Math.random() * 3 + 2) * speedMultiplier;
+            const delay = Math.random() * 5;
+
+            Object.assign(star.style, {
+              width: `${size}px`,
+              height: `${size}px`,
+              top: `${topPos}%`,
+              left: `${leftPos}%`,
+              animationDuration: `${duration}s`,
+              animationDelay: `${delay}s`,
+            });
+
+            container.appendChild(star);
+          }
+        });
+      });
+    </script>
     <script src="assets/js/global.js"></script>
   </body>
 </html>

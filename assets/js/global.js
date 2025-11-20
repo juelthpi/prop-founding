@@ -21,3 +21,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   });
 });
+
+// dropdown hide animation js
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll(".country-select-dropdown");
+
+  dropdowns.forEach(function (dropdownParent) {
+    const dropdownMenu = dropdownParent.querySelector(".dropdown-menu");
+
+    dropdownParent.addEventListener("show.bs.dropdown", function () {
+      dropdownMenu.classList.remove("hiding");
+    });
+    dropdownParent.addEventListener("hide.bs.dropdown", function (e) {
+      e.preventDefault();
+      dropdownMenu.classList.add("hiding");
+      setTimeout(() => {
+        dropdownMenu.classList.remove("show", "hiding");
+      }, 250);
+    });
+  });
+});

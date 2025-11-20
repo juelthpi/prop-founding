@@ -272,14 +272,37 @@
               platform combines transparency, automation, and real-time insights
               so you can invest with confidence.
             </p>
-            <div class="d-flex align-items-center gap-3 mt-4">
+            <div
+              class="d-flex align-items-center gap-3 mt-4 flex-wrap justify-content-center justify-content-md-start"
+            >
               <a href="sign-up.html" class="primary-btn">Create Free Account</a>
-              <a href="#" class="secondary-btn">Watch Demo</a>
+              <a
+                href="#"
+                class="secondary-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#demoVideo"
+                >Watch Demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade bg-filter-20" id="demoVideo" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-brand-30 p-2 border-1">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/ZKJPuudGX2c?si=gd7RYXbE4tqK7vti"
+                allowfullscreen
+                loading="lazy"
+                class="w-100"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- End page overview -->
     <!-- Start trading journey -->
     <section
@@ -616,7 +639,7 @@
           <div class="col-md-8 offset-md-2 mt-5">
             <div
               class="accordion d-flex flex-column gap-2"
-              id="accordionPanelsStayOpenExample"
+              id="common-question"
             >
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -633,6 +656,7 @@
                 </h2>
                 <div
                   id="panelsStayOpen-collapseOne"
+                  data-bs-parent="#common-question"
                   class="accordion-collapse collapse show"
                 >
                   <div class="accordion-body">
@@ -658,6 +682,7 @@
                 </h2>
                 <div
                   id="panelsStayOpen-collapseTwo"
+                  data-bs-parent="#common-question"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">
@@ -686,6 +711,7 @@
                 </h2>
                 <div
                   id="panelsStayOpen-collapseThree"
+                  data-bs-parent="#common-question"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">
@@ -708,6 +734,7 @@
                 </h2>
                 <div
                   id="panelsStayOpen-collapseFour"
+                  data-bs-parent="#common-question"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">
@@ -730,6 +757,7 @@
                 </h2>
                 <div
                   id="panelsStayOpen-collapseFive"
+                  data-bs-parent="#common-question"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">

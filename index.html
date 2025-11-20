@@ -819,7 +819,7 @@
                   class="w-100"
                 />
               </div>
-              <div class="features-card-content mt-2">
+              <div class="features-card-content mt-2 text-center">
                 <h6 class="text-white-100">Instant Transactions</h6>
                 <p class="mt-2 text-white-80">
                   Experience lightning-fast transaction processing and
@@ -842,7 +842,7 @@
                   class="w-100"
                 />
               </div>
-              <div class="features-card-content mt-2">
+              <div class="features-card-content mt-2 text-center">
                 <h6 class="text-white-100">Enterprise-Grade Security</h6>
                 <p class="mt-2 text-white-80">
                   Your assets are protected with multi-layer security protocols
@@ -865,7 +865,7 @@
                   class="w-100"
                 />
               </div>
-              <div class="features-card-content mt-2">
+              <div class="features-card-content mt-2 text-center">
                 <h6 class="text-white-100">Multi-Chain Support</h6>
                 <p class="mt-2 text-white-80">
                   Trade assets across multiple blockchain networks from a single
@@ -1028,7 +1028,7 @@
                       class="w-100"
                     />
                   </div>
-                  <div class="features-card-content mt-2">
+                  <div class="features-card-content mt-2 text-center">
                     <h6 class="text-white-100">Smart Investment Options</h6>
                     <p class="mt-2 text-white-80">
                       Diversify your portfolio with AI-powered investment
@@ -1056,7 +1056,7 @@
               Trusted by Investors Worldwide
             </h3>
           </div>
-          <div class="col-xxl-7 col-md-3">
+          <div class="col-xxl-7 col-md-3 d-none d-md-block">
             <div
               class="slider-button d-flex align-items-center gap-3 justify-content-center justify-content-md-end"
             >
@@ -1255,6 +1255,56 @@
                 </div>
               </div>
             </div>
+            <!-- mobile view slider nav -->
+            <div class="d-block mt-4 d-md-none">
+              <div
+                class="slider-button d-flex align-items-center gap-3 justify-content-center justify-content-md-end"
+              >
+                <span
+                  class="swiper-slider-button"
+                  id="swiper-slider-button-next"
+                >
+                  <svg
+                    width="10"
+                    height="18"
+                    viewBox="0 0 10 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.74993 0.75C8.74993 0.75 0.75 6.64187 0.75 8.75C0.75 10.8583 8.75 16.75 8.75 16.75"
+                      stroke="white"
+                      stroke-opacity="0.8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="swiper-slider-button"
+                  id="swiper-slider-button-prev"
+                >
+                  <svg
+                    width="10"
+                    height="18"
+                    viewBox="0 0 10 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="transform: rotate(180deg)"
+                  >
+                    <path
+                      d="M8.74993 0.75C8.74993 0.75 0.75 6.64187 0.75 8.75C0.75 10.8583 8.75 16.75 8.75 16.75"
+                      stroke="white"
+                      stroke-opacity="0.8"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1379,7 +1429,7 @@
               data-aos="fade-up"
               data-aos-duration="700"
             >
-              Why Choose Us
+              Our Recent Blog Post
             </h3>
             <p class="text-white-80 text-center text-md-start mt-2">
               See how we compare to traditional prop firms
@@ -1389,7 +1439,7 @@
             <div
               class="slider-button d-flex align-items-center gap-3 justify-content-center justify-content-md-end"
             >
-              <a href="#" class="secondary-btn">See How It Works</a>
+              <a href="#" class="secondary-btn">View All Blog</a>
             </div>
           </div>
         </div>
@@ -1412,9 +1462,15 @@
                 <h6 class="text-white-100">Full Transparency</h6>
                 <p class="mt-2 text-white-80">
                   Complete visibility into all transactions and fees. No hidden
-                  costs, no surprises - just clear, honest information at every
-                  step.
+                  costs, honest information at every step.
                 </p>
+                <div class="d-inline-block mt-3">
+                  <a
+                    href="blog-details.html"
+                    class="secondary-btn secondary-btn-sm hover:bg-brand-90"
+                    >Read More</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -1446,6 +1502,13 @@
                           security, smart automation, and customizable settings
                           put you in complete command.
                         </p>
+                        <div class="d-inline-block mt-3">
+                          <a
+                            href="blog-details.html"
+                            class="secondary-btn secondary-btn-sm hover:bg-brand-90"
+                            >Read More</a
+                          >
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1477,6 +1540,13 @@
                           experience, with no waiting periods, unnecessary
                           restrictions, or complicated processes.
                         </p>
+                        <div class="d-inline-block mt-3">
+                          <a
+                            href="blog-details.html"
+                            class="secondary-btn secondary-btn-sm hover:bg-brand-90"
+                            >Read More</a
+                          >
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1556,7 +1626,7 @@
                 </p>
               </div>
               <div class="footer-nav">
-                <ul class="d-flex align-items-center gap-2 gap-sm-3">
+                <ul class="d-flex align-items-center gap-1 gap-sm-3">
                   <li><a href="index.html" class="text-white-80">Home</a></li>
                   <li>
                     <a href="how-work.html" class="text-white-80"
@@ -1787,6 +1857,7 @@
         speed: 1000,
         spaceBetween: 20,
         autoplay: false,
+
         // autoplay: {
         //   delay: 2000,
         //   disableOnInteraction: false,

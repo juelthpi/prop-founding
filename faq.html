@@ -274,10 +274,7 @@
           <!-- item -->
           <div class="col-md-12">
             <h5 class="text-white-100 mb-4">Getting Started</h5>
-            <div
-              class="accordion d-flex flex-column gap-2"
-              id="accordionPanelsStayOpenExample"
-            >
+            <div class="accordion d-flex flex-column gap-2" id="get-start">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -293,6 +290,7 @@
                 </h2>
                 <div
                   id="panelsStayOpen-collapseOne"
+                  data-bs-parent="#get-start"
                   class="accordion-collapse collapse show"
                 >
                   <div class="accordion-body">
@@ -315,6 +313,7 @@
                 </h2>
                 <div
                   id="panelsStayOpen-collapseTwo"
+                  data-bs-parent="#get-start"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">
@@ -343,6 +342,7 @@
                 </h2>
                 <div
                   id="panelsStayOpen-collapseThree"
+                  data-bs-parent="#get-start"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">
@@ -355,14 +355,14 @@
           <!-- item -->
           <div class="col-md-12">
             <h5 class="text-white-100 mb-4">Deposits/Withdrawals</h5>
-            <div class="accordion d-flex flex-column gap-2">
+            <div class="accordion d-flex flex-column gap-2" id="payment">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#Deposits-collapseOne"
+                    data-bs-target="#payment"
                     aria-expanded="true"
                     aria-controls="Deposits-collapseOne"
                   >
@@ -371,6 +371,7 @@
                 </h2>
                 <div
                   id="Deposits-collapseOne"
+                  data-bs-parent="#payment"
                   class="accordion-collapse collapse show"
                 >
                   <div class="accordion-body">
@@ -393,6 +394,7 @@
                 </h2>
                 <div
                   id="Deposits-collapseTwo"
+                  data-bs-parent="#payment"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">
@@ -421,6 +423,7 @@
                 </h2>
                 <div
                   id="Deposits-collapseThree"
+                  data-bs-parent="#payment"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">
@@ -433,7 +436,7 @@
           <!-- item -->
           <div class="col-md-12">
             <h5 class="text-white-100 mb-4">Risk & Limits</h5>
-            <div class="accordion d-flex flex-column gap-2">
+            <div class="accordion d-flex flex-column gap-2" id="risk">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
@@ -449,6 +452,7 @@
                 </h2>
                 <div
                   id="Risk-collapseOne"
+                  data-bs-parent="#risk"
                   class="accordion-collapse collapse show"
                 >
                   <div class="accordion-body">
@@ -469,7 +473,11 @@
                     Do I pay fees on losses?
                   </button>
                 </h2>
-                <div id="Risk-collapseTwo" class="accordion-collapse collapse">
+                <div
+                  id="Risk-collapseTwo"
+                  data-bs-parent="#risk"
+                  class="accordion-collapse collapse"
+                >
                   <div class="accordion-body">
                     <p class="text-white-70">
                       Can the first-cut change? Lorem ipsum dolor sit amet
@@ -496,6 +504,7 @@
                 </h2>
                 <div
                   id="Risk-collapseThree"
+                  data-bs-parent="#risk"
                   class="accordion-collapse collapse"
                 >
                   <div class="accordion-body">
